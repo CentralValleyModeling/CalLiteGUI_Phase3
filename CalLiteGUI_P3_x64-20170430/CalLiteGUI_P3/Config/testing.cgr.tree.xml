@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<dts_master>
+  <node level="0" name="Dts Directory">
+    <node level="1" name="NEW-FILE0.MTS" />
+    <node level="1" name="NEW-FILE0.DTS" />
+  </node>
+  <DTS name="NEW-FILE0.DTS">
+    <row operator="?" dts="" vartype="DVAR" bpart="CO_B" cpart="INTERCEPT" />
+  </DTS>
+  <MTS name="NEW-FILE0.MTS">
+    <row dts="" vartype="SVAR" bpart="DR69" cpart="DEMAND" />
+    <row dts="" vartype="DVAR" bpart="CO_B" cpart="INTERCEPT" />
+  </MTS>
+</dts_master>
+

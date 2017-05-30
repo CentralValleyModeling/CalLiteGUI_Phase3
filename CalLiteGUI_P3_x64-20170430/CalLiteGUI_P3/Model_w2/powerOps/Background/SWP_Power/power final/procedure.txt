@@ -1,0 +1,8 @@
+All of the *.wresl and *.table files that were created/modified for the power modeling are included in the main directory called "Ptemp".  To use the power files in a CALSIM study, follow the steps below.
+
+1.  Rename the Ptemp directory to the name of the CALSIM study you wish to run.
+2.  Copy the directory (previously called Ptemp) to the directory that includes your CALSIM study.
+3.  Windows will prompt you with the following message:  "This folder already contains a folder named [study name]. . ."
+4.  Click on the option, "Yes To All".
+
+The power files will then be included in the study.  All other procedures necessary to run CALSIM are the same procedures necessary to run any CALSIM study.

@@ -1,0 +1,14 @@
+!Prices are forward prices as of 08/25/2009 and were developed by DWR power portfolio section.(extrapolated from a linear trend that was fitted to the estimates beginning in late 2009 and ending in 2039)
+month,onPeak,offPeak
+10,122.35,105.80
+11,125.29,108.31
+12,129.39,113.11
+1,127.19,112.45
+2,126.40,113.54
+3,124.64,110.66
+4,118.36,100.64
+5,122.00,94.49
+6,125.78,94.26
+7,140.03,103.42
+8,128.80,103.03
+9,124.97,102.20

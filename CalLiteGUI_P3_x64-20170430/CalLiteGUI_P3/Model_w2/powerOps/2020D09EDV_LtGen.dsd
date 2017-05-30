@@ -1,0 +1,554 @@
+
+     HECDSS Condensed Catalog of Record Pathnames in File D:\CalLite_3.0\CalLite_v3_20151123_PowerModule_Dashboard\Model_w
+
+     Catalog Created on Nov 21, 2016 at 13:06    File Created on Aug 26, 2015
+     Number of Records:   4905                   DSS Version 6-QF,  File 6-QF
+     Sort Order: ABCFED
+
+ Tag    A Part      B Part            C Part                         F Part                        E Part  D Part
+
+ T199   HYDROPOWER  CARRPP            AVAILABLE-CAPACITY             POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T172   - - - - -   - - - - - - - -   ELEVATION-DOWNSTREAM           POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T163   - - - - -   - - - - - - - -   ELEVATION-UPSTREAM             POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T235   - - - - -   - - - - - - - -   ENERGY                         POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T208   - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T181   - - - - -   - - - - - - - -   ENERGY-FACTOR                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T253   - - - - -   - - - - - - - -   FORGONE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T280   - - - - -   - - - - - - - -   GENERATION-REVENUE             ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T289   - - - - -   - - - - - - - -   LOSSES                         ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T262   - - - - -   - - - - - - - -   PERCENT-LOSS                   ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T226   - - - - -   - - - - - - - -   RELEASE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T217   - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T244   - - - - -   - - - - - - - -   SPILL                          POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T154   - - - - -   - - - - - - - -   STORAGE-USED                   POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T298   - - - - -   - - - - - - - -   TOTAL                          CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T271   - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T190   - - - - -   - - - - - - - -   UNIT-CAPACITY                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T1990  - - - - -   CONTRACOSTAPUMP   ENERGY-FACTOR                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2206  - - - - -   - - - - - - - -   LOSSES                         PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2053  - - - - -   - - - - - - - -   MAX-CAPACITY                   PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2008  - - - - -   - - - - - - - -   NUMBER-OF-UNITS                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2035  - - - - -   - - - - - - - -   OFF-PEAK-ADJUSTMENT            PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2215  - - - - -   - - - - - - - -   OFF-PEAK-CAPACITY              CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T2143  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T2089  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-ACTUAL         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2098  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-CHECK          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2071  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-DESIRED        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2080  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-PHYS-MAX       ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2017  - - - - -   - - - - - - - -   OFF-PEAK-PERCENT               PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2179  - - - - -   - - - - - - - -   OFF-PEAK-TOTAL-PUMPING-ENERGY  PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2044  - - - - -   - - - - - - - -   ON-PEAK-ADJUSTMENT             PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2224  - - - - -   - - - - - - - -   ON-PEAK-CAPACITY               CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T2152  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T2197  - - - - -   - - - - - - - -   ON-PEAK-COST                   ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T2125  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-ACTUAL          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2134  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-CHECK           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2107  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-DESIRED         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2116  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-PHYS-MAX        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2026  - - - - -   - - - - - - - -   ON-PEAK-PERCENT                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2188  - - - - -   - - - - - - - -   ON-PEAK-TOTAL-PUMPING-ENERGY   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2161  - - - - -   - - - - - - - -   PERCENT-LOSS                   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2062  - - - - -   - - - - - - - -   TOTAL-PUMPING-ENERGY           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2170  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T1999  - - - - -   - - - - - - - -   UNIT-CAPACITY                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3448  - - - - -   CORNINGPUMP       ENERGY-FACTOR                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3664  - - - - -   - - - - - - - -   LOSSES                         PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3511  - - - - -   - - - - - - - -   MAX-CAPACITY                   PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3466  - - - - -   - - - - - - - -   NUMBER-OF-UNITS                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3493  - - - - -   - - - - - - - -   OFF-PEAK-ADJUSTMENT            PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3673  - - - - -   - - - - - - - -   OFF-PEAK-CAPACITY              CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T3601  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T3547  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-ACTUAL         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3556  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-CHECK          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3529  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-DESIRED        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3538  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-PHYS-MAX       ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3475  - - - - -   - - - - - - - -   OFF-PEAK-PERCENT               PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3637  - - - - -   - - - - - - - -   OFF-PEAK-TOTAL-PUMPING-ENERGY  PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3502  - - - - -   - - - - - - - -   ON-PEAK-ADJUSTMENT             PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3682  - - - - -   - - - - - - - -   ON-PEAK-CAPACITY               CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T3610  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T3655  - - - - -   - - - - - - - -   ON-PEAK-COST                   ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T3583  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-ACTUAL          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3592  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-CHECK           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3565  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-DESIRED         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3574  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-PHYS-MAX        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3484  - - - - -   - - - - - - - -   ON-PEAK-PERCENT                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3646  - - - - -   - - - - - - - -   ON-PEAK-TOTAL-PUMPING-ENERGY   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3619  - - - - -   - - - - - - - -   PERCENT-LOSS                   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3520  - - - - -   - - - - - - - -   TOTAL-PUMPING-ENERGY           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3628  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3457  - - - - -   - - - - - - - -   UNIT-CAPACITY                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T1747  - - - - -   CVPBANKSPUMP      ENERGY-FACTOR                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T1963  - - - - -   - - - - - - - -   LOSSES                         PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T1810  - - - - -   - - - - - - - -   MAX-CAPACITY                   PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T1765  - - - - -   - - - - - - - -   NUMBER-OF-UNITS                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T1792  - - - - -   - - - - - - - -   OFF-PEAK-ADJUSTMENT            PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T1972  - - - - -   - - - - - - - -   OFF-PEAK-CAPACITY              CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T1900  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T1846  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-ACTUAL         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T1855  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-CHECK          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T1828  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-DESIRED        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T1837  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-PHYS-MAX       ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T1774  - - - - -   - - - - - - - -   OFF-PEAK-PERCENT               PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T1936  - - - - -   - - - - - - - -   OFF-PEAK-TOTAL-PUMPING-ENERGY  PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T1801  - - - - -   - - - - - - - -   ON-PEAK-ADJUSTMENT             PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T1981  - - - - -   - - - - - - - -   ON-PEAK-CAPACITY               CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T1909  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T1954  - - - - -   - - - - - - - -   ON-PEAK-COST                   ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T1882  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-ACTUAL          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T1891  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-CHECK           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T1864  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-DESIRED         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T1873  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-PHYS-MAX        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T1783  - - - - -   - - - - - - - -   ON-PEAK-PERCENT                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T1945  - - - - -   - - - - - - - -   ON-PEAK-TOTAL-PUMPING-ENERGY   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T1918  - - - - -   - - - - - - - -   PERCENT-LOSS                   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T1819  - - - - -   - - - - - - - -   TOTAL-PUMPING-ENERGY           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T1927  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T1756  - - - - -   - - - - - - - -   UNIT-CAPACITY                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2962  - - - - -   CVPDOSAMIGOSPUMP  ENERGY-FACTOR                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3178  - - - - -   - - - - - - - -   LOSSES                         PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3025  - - - - -   - - - - - - - -   MAX-CAPACITY                   PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2980  - - - - -   - - - - - - - -   NUMBER-OF-UNITS                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3007  - - - - -   - - - - - - - -   OFF-PEAK-ADJUSTMENT            PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3187  - - - - -   - - - - - - - -   OFF-PEAK-CAPACITY              CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T3115  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T3061  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-ACTUAL         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3070  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-CHECK          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3043  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-DESIRED        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3052  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-PHYS-MAX       ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2989  - - - - -   - - - - - - - -   OFF-PEAK-PERCENT               PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3151  - - - - -   - - - - - - - -   OFF-PEAK-TOTAL-PUMPING-ENERGY  PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3016  - - - - -   - - - - - - - -   ON-PEAK-ADJUSTMENT             PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3196  - - - - -   - - - - - - - -   ON-PEAK-CAPACITY               CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T3124  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T3169  - - - - -   - - - - - - - -   ON-PEAK-COST                   ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T3097  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-ACTUAL          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3106  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-CHECK           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3079  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-DESIRED         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3088  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-PHYS-MAX        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2998  - - - - -   - - - - - - - -   ON-PEAK-PERCENT                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3160  - - - - -   - - - - - - - -   ON-PEAK-TOTAL-PUMPING-ENERGY   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3133  - - - - -   - - - - - - - -   PERCENT-LOSS                   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3034  - - - - -   - - - - - - - -   TOTAL-PUMPING-ENERGY           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3142  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2971  - - - - -   - - - - - - - -   UNIT-CAPACITY                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T1270  - - - - -   CVPSANLUISPP      AVAILABLE-CAPACITY             POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T1243  - - - - -   - - - - - - - -   ELEVATION                      POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T1306  - - - - -   - - - - - - - -   ENERGY                         POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T1279  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T1252  - - - - -   - - - - - - - -   ENERGY-FACTOR                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T1324  - - - - -   - - - - - - - -   FORGONE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T1351  - - - - -   - - - - - - - -   GENERATION-REVENUE             ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T1360  - - - - -   - - - - - - - -   LOSSES                         ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T1333  - - - - -   - - - - - - - -   PERCENT-LOSS                   ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T1297  - - - - -   - - - - - - - -   RELEASE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T1288  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T1315  - - - - -   - - - - - - - -   SPILL                          POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T1234  - - - - -   - - - - - - - -   STORAGE-USED                   POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T1369  - - - - -   - - - - - - - -   TOTAL                          CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T1342  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T1261  - - - - -   - - - - - - - -   UNIT-CAPACITY                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T2476  - - - - -   CVPSANLUISPUMP    ENERGY-FACTOR                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2692  - - - - -   - - - - - - - -   LOSSES                         PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2539  - - - - -   - - - - - - - -   MAX-CAPACITY                   PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2494  - - - - -   - - - - - - - -   NUMBER-OF-UNITS                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2521  - - - - -   - - - - - - - -   OFF-PEAK-ADJUSTMENT            PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2701  - - - - -   - - - - - - - -   OFF-PEAK-CAPACITY              CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T2629  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T2575  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-ACTUAL         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2584  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-CHECK          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2557  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-DESIRED        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2566  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-PHYS-MAX       ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2503  - - - - -   - - - - - - - -   OFF-PEAK-PERCENT               PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2665  - - - - -   - - - - - - - -   OFF-PEAK-TOTAL-PUMPING-ENERGY  PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2530  - - - - -   - - - - - - - -   ON-PEAK-ADJUSTMENT             PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2710  - - - - -   - - - - - - - -   ON-PEAK-CAPACITY               CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T2638  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T2683  - - - - -   - - - - - - - -   ON-PEAK-COST                   ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T2611  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-ACTUAL          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2620  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-CHECK           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2593  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-DESIRED         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2602  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-PHYS-MAX        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2512  - - - - -   - - - - - - - -   ON-PEAK-PERCENT                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2674  - - - - -   - - - - - - - -   ON-PEAK-TOTAL-PUMPING-ENERGY   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2647  - - - - -   - - - - - - - -   PERCENT-LOSS                   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2548  - - - - -   - - - - - - - -   TOTAL-PUMPING-ENERGY           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2656  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2485  - - - - -   - - - - - - - -   UNIT-CAPACITY                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3934  - - - - -   DMCINTERTIEPUMP   ENERGY-FACTOR                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4150  - - - - -   - - - - - - - -   LOSSES                         PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3997  - - - - -   - - - - - - - -   MAX-CAPACITY                   PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3952  - - - - -   - - - - - - - -   NUMBER-OF-UNITS                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3979  - - - - -   - - - - - - - -   OFF-PEAK-ADJUSTMENT            PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4159  - - - - -   - - - - - - - -   OFF-PEAK-CAPACITY              CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T4087  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T4033  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-ACTUAL         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4042  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-CHECK          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4015  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-DESIRED        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4024  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-PHYS-MAX       ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3961  - - - - -   - - - - - - - -   OFF-PEAK-PERCENT               PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4123  - - - - -   - - - - - - - -   OFF-PEAK-TOTAL-PUMPING-ENERGY  PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3988  - - - - -   - - - - - - - -   ON-PEAK-ADJUSTMENT             PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4168  - - - - -   - - - - - - - -   ON-PEAK-CAPACITY               CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T4096  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T4141  - - - - -   - - - - - - - -   ON-PEAK-COST                   ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T4069  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-ACTUAL          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4078  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-CHECK           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4051  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-DESIRED         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4060  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-PHYS-MAX        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3970  - - - - -   - - - - - - - -   ON-PEAK-PERCENT                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4132  - - - - -   - - - - - - - -   ON-PEAK-TOTAL-PUMPING-ENERGY   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T4105  - - - - -   - - - - - - - -   PERCENT-LOSS                   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T4006  - - - - -   - - - - - - - -   TOTAL-PUMPING-ENERGY           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4114  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3943  - - - - -   - - - - - - - -   UNIT-CAPACITY                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4420  - - - - -   DMCOTHERPUMP      ENERGY-FACTOR                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4636  - - - - -   - - - - - - - -   LOSSES                         PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T4483  - - - - -   - - - - - - - -   MAX-CAPACITY                   PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4438  - - - - -   - - - - - - - -   NUMBER-OF-UNITS                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4465  - - - - -   - - - - - - - -   OFF-PEAK-ADJUSTMENT            PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4645  - - - - -   - - - - - - - -   OFF-PEAK-CAPACITY              CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T4573  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T4519  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-ACTUAL         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4528  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-CHECK          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4501  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-DESIRED        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4510  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-PHYS-MAX       ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4447  - - - - -   - - - - - - - -   OFF-PEAK-PERCENT               PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4609  - - - - -   - - - - - - - -   OFF-PEAK-TOTAL-PUMPING-ENERGY  PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T4474  - - - - -   - - - - - - - -   ON-PEAK-ADJUSTMENT             PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4654  - - - - -   - - - - - - - -   ON-PEAK-CAPACITY               CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T4582  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T4627  - - - - -   - - - - - - - -   ON-PEAK-COST                   ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T4555  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-ACTUAL          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4564  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-CHECK           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4537  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-DESIRED         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4546  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-PHYS-MAX        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4456  - - - - -   - - - - - - - -   ON-PEAK-PERCENT                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4618  - - - - -   - - - - - - - -   ON-PEAK-TOTAL-PUMPING-ENERGY   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T4591  - - - - -   - - - - - - - -   PERCENT-LOSS                   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T4492  - - - - -   - - - - - - - -   TOTAL-PUMPING-ENERGY           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4600  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T4429  - - - - -   - - - - - - - -   UNIT-CAPACITY                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T820   - - - - -   FOLSOMPP          AVAILABLE-CAPACITY             POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T784   - - - - -   - - - - - - - -   ELEVATION                      POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T856   - - - - -   - - - - - - - -   ENERGY                         POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T829   - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T802   - - - - -   - - - - - - - -   ENERGY-FACTOR                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T874   - - - - -   - - - - - - - -   FORGONE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T901   - - - - -   - - - - - - - -   GENERATION-REVENUE             ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T910   - - - - -   - - - - - - - -   LOSSES                         ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T883   - - - - -   - - - - - - - -   PERCENT-LOSS                   ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T847   - - - - -   - - - - - - - -   RELEASE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T838   - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T865   - - - - -   - - - - - - - -   SPILL                          POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T775   - - - - -   - - - - - - - -   STORAGE-USED                   POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T793   - - - - -   - - - - - - - -   TAIL-RACE                      POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T919   - - - - -   - - - - - - - -   TOTAL                          CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T892   - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T811   - - - - -   - - - - - - - -   UNIT-CAPACITY                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T3205  - - - - -   FOLSOMPUMP        ENERGY-FACTOR                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3421  - - - - -   - - - - - - - -   LOSSES                         PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3268  - - - - -   - - - - - - - -   MAX-CAPACITY                   PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3223  - - - - -   - - - - - - - -   NUMBER-OF-UNITS                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3250  - - - - -   - - - - - - - -   OFF-PEAK-ADJUSTMENT            PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3430  - - - - -   - - - - - - - -   OFF-PEAK-CAPACITY              CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T3358  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T3304  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-ACTUAL         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3313  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-CHECK          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3286  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-DESIRED        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3295  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-PHYS-MAX       ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3232  - - - - -   - - - - - - - -   OFF-PEAK-PERCENT               PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3394  - - - - -   - - - - - - - -   OFF-PEAK-TOTAL-PUMPING-ENERGY  PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3259  - - - - -   - - - - - - - -   ON-PEAK-ADJUSTMENT             PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3439  - - - - -   - - - - - - - -   ON-PEAK-CAPACITY               CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T3367  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T3412  - - - - -   - - - - - - - -   ON-PEAK-COST                   ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T3340  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-ACTUAL          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3349  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-CHECK           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3322  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-DESIRED         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3331  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-PHYS-MAX        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3241  - - - - -   - - - - - - - -   ON-PEAK-PERCENT                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3403  - - - - -   - - - - - - - -   ON-PEAK-TOTAL-PUMPING-ENERGY   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3376  - - - - -   - - - - - - - -   PERCENT-LOSS                   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3277  - - - - -   - - - - - - - -   TOTAL-PUMPING-ENERGY           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3385  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3214  - - - - -   - - - - - - - -   UNIT-CAPACITY                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T667   - - - - -   KESWICKPP         AVAILABLE-CAPACITY             POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T631   - - - - -   - - - - - - - -   ELEVATION                      POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T703   - - - - -   - - - - - - - -   ENERGY                         POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T676   - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T649   - - - - -   - - - - - - - -   ENERGY-FACTOR                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T721   - - - - -   - - - - - - - -   FORGONE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T748   - - - - -   - - - - - - - -   GENERATION-REVENUE             ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T757   - - - - -   - - - - - - - -   LOSSES                         ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T730   - - - - -   - - - - - - - -   PERCENT-LOSS                   ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T694   - - - - -   - - - - - - - -   RELEASE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T685   - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T712   - - - - -   - - - - - - - -   SPILL                          POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T622   - - - - -   - - - - - - - -   STORAGE-USED                   POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T640   - - - - -   - - - - - - - -   TAIL-RACE                      POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T766   - - - - -   - - - - - - - -   TOTAL                          CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T739   - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T658   - - - - -   - - - - - - - -   UNIT-CAPACITY                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T1126  - - - - -   NEWMELONESPP      AVAILABLE-CAPACITY             POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T1090  - - - - -   - - - - - - - -   ELEVATION                      POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T1162  - - - - -   - - - - - - - -   ENERGY                         POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T1135  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T1108  - - - - -   - - - - - - - -   ENERGY-FACTOR                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T1180  - - - - -   - - - - - - - -   FORGONE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T1207  - - - - -   - - - - - - - -   GENERATION-REVENUE             ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T1216  - - - - -   - - - - - - - -   LOSSES                         ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T1189  - - - - -   - - - - - - - -   PERCENT-LOSS                   ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T1153  - - - - -   - - - - - - - -   RELEASE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T1144  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T1171  - - - - -   - - - - - - - -   SPILL                          POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T1081  - - - - -   - - - - - - - -   STORAGE-USED                   POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T1099  - - - - -   - - - - - - - -   TAIL-RACE                      POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T1225  - - - - -   - - - - - - - -   TOTAL                          CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T1198  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T1117  - - - - -   - - - - - - - -   UNIT-CAPACITY                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T973   - - - - -   NIMBUSPP          AVAILABLE-CAPACITY             POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T937   - - - - -   - - - - - - - -   ELEVATION                      POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T1009  - - - - -   - - - - - - - -   ENERGY                         POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T982   - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T955   - - - - -   - - - - - - - -   ENERGY-FACTOR                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T1027  - - - - -   - - - - - - - -   FORGONE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T1054  - - - - -   - - - - - - - -   GENERATION-REVENUE             ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T1063  - - - - -   - - - - - - - -   LOSSES                         ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T1036  - - - - -   - - - - - - - -   PERCENT-LOSS                   ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T1000  - - - - -   - - - - - - - -   RELEASE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T991   - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T1018  - - - - -   - - - - - - - -   SPILL                          POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T928   - - - - -   - - - - - - - -   STORAGE-USED                   POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T946   - - - - -   - - - - - - - -   TAIL-RACE                      POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T1072  - - - - -   - - - - - - - -   TOTAL                          CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T1045  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T964   - - - - -   - - - - - - - -   UNIT-CAPACITY                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T2233  - - - - -   ONEILLPUMP        ENERGY-FACTOR                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2449  - - - - -   - - - - - - - -   LOSSES                         PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2296  - - - - -   - - - - - - - -   MAX-CAPACITY                   PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2251  - - - - -   - - - - - - - -   NUMBER-OF-UNITS                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2278  - - - - -   - - - - - - - -   OFF-PEAK-ADJUSTMENT            PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2458  - - - - -   - - - - - - - -   OFF-PEAK-CAPACITY              CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T2386  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T2332  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-ACTUAL         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2341  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-CHECK          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2314  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-DESIRED        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2323  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-PHYS-MAX       ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2260  - - - - -   - - - - - - - -   OFF-PEAK-PERCENT               PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2422  - - - - -   - - - - - - - -   OFF-PEAK-TOTAL-PUMPING-ENERGY  PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2287  - - - - -   - - - - - - - -   ON-PEAK-ADJUSTMENT             PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2467  - - - - -   - - - - - - - -   ON-PEAK-CAPACITY               CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T2395  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T2440  - - - - -   - - - - - - - -   ON-PEAK-COST                   ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T2368  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-ACTUAL          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2377  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-CHECK           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2350  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-DESIRED         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2359  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-PHYS-MAX        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2269  - - - - -   - - - - - - - -   ON-PEAK-PERCENT                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2431  - - - - -   - - - - - - - -   ON-PEAK-TOTAL-PUMPING-ENERGY   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2404  - - - - -   - - - - - - - -   PERCENT-LOSS                   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2305  - - - - -   - - - - - - - -   TOTAL-PUMPING-ENERGY           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2413  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2242  - - - - -   - - - - - - - -   UNIT-CAPACITY                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T1396  - - - - -   ONEILPP           AVAILABLE-CAPACITY             POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T1432  - - - - -   - - - - - - - -   ENERGY                         POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T1405  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T1378  - - - - -   - - - - - - - -   ENERGY-FACTOR                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T1450  - - - - -   - - - - - - - -   FORGONE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T1477  - - - - -   - - - - - - - -   GENERATION-REVENUE             ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T1486  - - - - -   - - - - - - - -   LOSSES                         ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T1459  - - - - -   - - - - - - - -   PERCENT-LOSS                   ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T1423  - - - - -   - - - - - - - -   RELEASE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T1414  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T1441  - - - - -   - - - - - - - -   SPILL                          POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T1495  - - - - -   - - - - - - - -   TOTAL                          CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T1468  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T1387  - - - - -   - - - - - - - -   UNIT-CAPACITY                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T3691  - - - - -   REDBLUFFPUMP      ENERGY-FACTOR                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3907  - - - - -   - - - - - - - -   LOSSES                         PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3754  - - - - -   - - - - - - - -   MAX-CAPACITY                   PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3709  - - - - -   - - - - - - - -   NUMBER-OF-UNITS                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3736  - - - - -   - - - - - - - -   OFF-PEAK-ADJUSTMENT            PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3916  - - - - -   - - - - - - - -   OFF-PEAK-CAPACITY              CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T3844  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T3790  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-ACTUAL         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3799  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-CHECK          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3772  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-DESIRED        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3781  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-PHYS-MAX       ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3718  - - - - -   - - - - - - - -   OFF-PEAK-PERCENT               PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3880  - - - - -   - - - - - - - -   OFF-PEAK-TOTAL-PUMPING-ENERGY  PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3745  - - - - -   - - - - - - - -   ON-PEAK-ADJUSTMENT             PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3925  - - - - -   - - - - - - - -   ON-PEAK-CAPACITY               CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T3853  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T3898  - - - - -   - - - - - - - -   ON-PEAK-COST                   ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T3826  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-ACTUAL          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3835  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-CHECK           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3808  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-DESIRED         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3817  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-PHYS-MAX        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3727  - - - - -   - - - - - - - -   ON-PEAK-PERCENT                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T3889  - - - - -   - - - - - - - -   ON-PEAK-TOTAL-PUMPING-ENERGY   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3862  - - - - -   - - - - - - - -   PERCENT-LOSS                   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3763  - - - - -   - - - - - - - -   TOTAL-PUMPING-ENERGY           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T3871  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T3700  - - - - -   - - - - - - - -   UNIT-CAPACITY                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2719  - - - - -   SANFELIPEPUMP     ENERGY-FACTOR                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2935  - - - - -   - - - - - - - -   LOSSES                         PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2782  - - - - -   - - - - - - - -   MAX-CAPACITY                   PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2737  - - - - -   - - - - - - - -   NUMBER-OF-UNITS                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2764  - - - - -   - - - - - - - -   OFF-PEAK-ADJUSTMENT            PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2944  - - - - -   - - - - - - - -   OFF-PEAK-CAPACITY              CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T2872  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T2818  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-ACTUAL         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2827  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-CHECK          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2800  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-DESIRED        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2809  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-PHYS-MAX       ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2746  - - - - -   - - - - - - - -   OFF-PEAK-PERCENT               PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2908  - - - - -   - - - - - - - -   OFF-PEAK-TOTAL-PUMPING-ENERGY  PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2773  - - - - -   - - - - - - - -   ON-PEAK-ADJUSTMENT             PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2953  - - - - -   - - - - - - - -   ON-PEAK-CAPACITY               CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T2881  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T2926  - - - - -   - - - - - - - -   ON-PEAK-COST                   ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T2854  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-ACTUAL          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2863  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-CHECK           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2836  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-DESIRED         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2845  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-PHYS-MAX        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2755  - - - - -   - - - - - - - -   ON-PEAK-PERCENT                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T2917  - - - - -   - - - - - - - -   ON-PEAK-TOTAL-PUMPING-ENERGY   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2890  - - - - -   - - - - - - - -   PERCENT-LOSS                   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2791  - - - - -   - - - - - - - -   TOTAL-PUMPING-ENERGY           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T2899  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T2728  - - - - -   - - - - - - - -   UNIT-CAPACITY                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4177  - - - - -   SANLUISOTHERPUMP  ENERGY-FACTOR                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4393  - - - - -   - - - - - - - -   LOSSES                         PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T4240  - - - - -   - - - - - - - -   MAX-CAPACITY                   PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4195  - - - - -   - - - - - - - -   NUMBER-OF-UNITS                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4222  - - - - -   - - - - - - - -   OFF-PEAK-ADJUSTMENT            PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4402  - - - - -   - - - - - - - -   OFF-PEAK-CAPACITY              CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T4330  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T4276  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-ACTUAL         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4285  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-CHECK          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4258  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-DESIRED        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4267  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-PHYS-MAX       ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4204  - - - - -   - - - - - - - -   OFF-PEAK-PERCENT               PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4366  - - - - -   - - - - - - - -   OFF-PEAK-TOTAL-PUMPING-ENERGY  PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T4231  - - - - -   - - - - - - - -   ON-PEAK-ADJUSTMENT             PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4411  - - - - -   - - - - - - - -   ON-PEAK-CAPACITY               CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T4339  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T4384  - - - - -   - - - - - - - -   ON-PEAK-COST                   ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T4312  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-ACTUAL          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4321  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-CHECK           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4294  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-DESIRED         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4303  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-PHYS-MAX        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4213  - - - - -   - - - - - - - -   ON-PEAK-PERCENT                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4375  - - - - -   - - - - - - - -   ON-PEAK-TOTAL-PUMPING-ENERGY   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T4348  - - - - -   - - - - - - - -   PERCENT-LOSS                   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T4249  - - - - -   - - - - - - - -   TOTAL-PUMPING-ENERGY           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4357  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T4186  - - - - -   - - - - - - - -   UNIT-CAPACITY                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T514   - - - - -   SHASTAPP          AVAILABLE-CAPACITY             POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T478   - - - - -   - - - - - - - -   ELEVATION                      POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T550   - - - - -   - - - - - - - -   ENERGY                         POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T523   - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T496   - - - - -   - - - - - - - -   ENERGY-FACTOR                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T568   - - - - -   - - - - - - - -   FORGONE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T595   - - - - -   - - - - - - - -   GENERATION-REVENUE             ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T604   - - - - -   - - - - - - - -   LOSSES                         ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T577   - - - - -   - - - - - - - -   PERCENT-LOSS                   ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T541   - - - - -   - - - - - - - -   RELEASE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T532   - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T559   - - - - -   - - - - - - - -   SPILL                          POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T469   - - - - -   - - - - - - - -   STORAGE-USED                   POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T487   - - - - -   - - - - - - - -   TAIL-RACE                      POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T613   - - - - -   - - - - - - - -   TOTAL                          CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T586   - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T505   - - - - -   - - - - - - - -   UNIT-CAPACITY                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T361   - - - - -   SPRINGCREEKPP     AVAILABLE-CAPACITY             POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T334   - - - - -   - - - - - - - -   ELEVATION-DOWNSTREAM           POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T325   - - - - -   - - - - - - - -   ELEVATION-UPSTREAM             POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T397   - - - - -   - - - - - - - -   ENERGY                         POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T370   - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T343   - - - - -   - - - - - - - -   ENERGY-FACTOR                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T415   - - - - -   - - - - - - - -   FORGONE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T442   - - - - -   - - - - - - - -   GENERATION-REVENUE             ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T451   - - - - -   - - - - - - - -   LOSSES                         ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T424   - - - - -   - - - - - - - -   PERCENT-LOSS                   ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T388   - - - - -   - - - - - - - -   RELEASE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T379   - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T406   - - - - -   - - - - - - - -   SPILL                          POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T316   - - - - -   - - - - - - - -   STORAGE-USED-DOWNSTREAM        POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T307   - - - - -   - - - - - - - -   STORAGE-USED-UPSTREAM          POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T460   - - - - -   - - - - - - - -   TOTAL                          CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T433   - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T352   - - - - -   - - - - - - - -   UNIT-CAPACITY                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T4663  - - - - -   TCOTHERPUMP       ENERGY-FACTOR                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4879  - - - - -   - - - - - - - -   LOSSES                         PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T4726  - - - - -   - - - - - - - -   MAX-CAPACITY                   PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4681  - - - - -   - - - - - - - -   NUMBER-OF-UNITS                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4708  - - - - -   - - - - - - - -   OFF-PEAK-ADJUSTMENT            PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4888  - - - - -   - - - - - - - -   OFF-PEAK-CAPACITY              CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T4816  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T4762  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-ACTUAL         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4771  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-CHECK          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4744  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-DESIRED        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4753  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-PHYS-MAX       ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4690  - - - - -   - - - - - - - -   OFF-PEAK-PERCENT               PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4852  - - - - -   - - - - - - - -   OFF-PEAK-TOTAL-PUMPING-ENERGY  PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T4717  - - - - -   - - - - - - - -   ON-PEAK-ADJUSTMENT             PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4897  - - - - -   - - - - - - - -   ON-PEAK-CAPACITY               CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T4825  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T4870  - - - - -   - - - - - - - -   ON-PEAK-COST                   ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T4798  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-ACTUAL          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4807  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-CHECK           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4780  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-DESIRED         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4789  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-PHYS-MAX        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4699  - - - - -   - - - - - - - -   ON-PEAK-PERCENT                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T4861  - - - - -   - - - - - - - -   ON-PEAK-TOTAL-PUMPING-ENERGY   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T4834  - - - - -   - - - - - - - -   PERCENT-LOSS                   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T4735  - - - - -   - - - - - - - -   TOTAL-PUMPING-ENERGY           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T4843  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T4672  - - - - -   - - - - - - - -   UNIT-CAPACITY                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T1504  - - - - -   TRACYPUMP         ENERGY-FACTOR                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T1720  - - - - -   - - - - - - - -   LOSSES                         PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T1567  - - - - -   - - - - - - - -   MAX-CAPACITY                   PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T1522  - - - - -   - - - - - - - -   NUMBER-OF-UNITS                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T1549  - - - - -   - - - - - - - -   OFF-PEAK-ADJUSTMENT            PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T1729  - - - - -   - - - - - - - -   OFF-PEAK-CAPACITY              CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T1657  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T1603  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-ACTUAL         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T1612  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-CHECK          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T1585  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-DESIRED        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T1594  - - - - -   - - - - - - - -   OFF-PEAK-ENERGY-PHYS-MAX       ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T1531  - - - - -   - - - - - - - -   OFF-PEAK-PERCENT               PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T1693  - - - - -   - - - - - - - -   OFF-PEAK-TOTAL-PUMPING-ENERGY  PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T1558  - - - - -   - - - - - - - -   ON-PEAK-ADJUSTMENT             PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T1738  - - - - -   - - - - - - - -   ON-PEAK-CAPACITY               CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T1666  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    COMPUTED-CAPACITY             1MON    01JAN1920 - 01JAN2000
+ T1711  - - - - -   - - - - - - - -   ON-PEAK-COST                   ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T1639  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-ACTUAL          ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T1648  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-CHECK           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T1621  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-DESIRED         ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T1630  - - - - -   - - - - - - - -   ON-PEAK-ENERGY-PHYS-MAX        ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T1540  - - - - -   - - - - - - - -   ON-PEAK-PERCENT                PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T1702  - - - - -   - - - - - - - -   ON-PEAK-TOTAL-PUMPING-ENERGY   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T1675  - - - - -   - - - - - - - -   PERCENT-LOSS                   PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T1576  - - - - -   - - - - - - - -   TOTAL-PUMPING-ENERGY           ENERGY-COMPUTATION            1MON    01JAN1920 - 01JAN2000
+ T1684  - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    PUMPING-AT-LC                 1MON    01JAN1920 - 01JAN2000
+ T1513  - - - - -   - - - - - - - -   UNIT-CAPACITY                  PUMPINGPLANT-CHARACTERISTICS  1MON    01JAN1920 - 01JAN2000
+ T46    - - - - -   TRINITYPP         AVAILABLE-CAPACITY             POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T10    - - - - -   - - - - - - - -   ELEVATION                      POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T82    - - - - -   - - - - - - - -   ENERGY                         POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T55    - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T28    - - - - -   - - - - - - - -   ENERGY-FACTOR                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T100   - - - - -   - - - - - - - -   FORGONE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T127   - - - - -   - - - - - - - -   GENERATION-REVENUE             ECONOMICS                     1MON    01JAN1920 - 01JAN2000
+ T136   - - - - -   - - - - - - - -   LOSSES                         ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T109   - - - - -   - - - - - - - -   PERCENT-LOSS                   ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T73    - - - - -   - - - - - - - -   RELEASE                        POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T64    - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    POWERPLANT-POTENTIAL          1MON    01JAN1920 - 01JAN2000
+ T91    - - - - -   - - - - - - - -   SPILL                          POWERPLANT-GENERATION         1MON    01JAN1920 - 01JAN2000
+ T1     - - - - -   - - - - - - - -   STORAGE-USED                   POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T19    - - - - -   - - - - - - - -   TAIL-RACE                      POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000
+ T145   - - - - -   - - - - - - - -   TOTAL                          CAPACITY-AT-LC                1MON    01JAN1920 - 01JAN2000
+ T118   - - - - -   - - - - - - - -   - - - - - - - - - - - - - -    ENERGY-AT-LC                  1MON    01JAN1920 - 01JAN2000
+ T37    - - - - -   - - - - - - - -   UNIT-CAPACITY                  POWERPLANT-CHARACTERISTICS    1MON    01JAN1920 - 01JAN2000

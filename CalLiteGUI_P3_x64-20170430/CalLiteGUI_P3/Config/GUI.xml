@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE doc [
+<!ENTITY runsettings SYSTEM "Config/Run_Settings.xml">
+<!ENTITY hydroclimate SYSTEM "Config/Hydroclimate.xml">
+<!ENTITY demands SYSTEM "Config/Demands.xml">
+<!ENTITY facilities SYSTEM "Config/Facilities.xml">
+<!ENTITY regulations SYSTEM "Config/Regulations.xml">
+<!ENTITY operations SYSTEM "Config/Operations.xml">
+<!ENTITY quickresults SYSTEM "Config/Quick_Results.xml">
+<!ENTITY customresults SYSTEM "Config/Custom_Results.xml">
+<!ENTITY mapview SYSTEM "Config/Map_View.xml">
+<!ENTITY externalpdf SYSTEM "Config/External_PDF.xml">
+<!ENTITY dataAnalysis SYSTEM "Config/Data_Analysis.xml">
+<!ENTITY dynamic SYSTEM "Config/Sandbox.xml">
+]>
+<frame id="desktop" name="desktop" size="1160,830" title="CalLite 3.x -  The Central Valley Water Management Screening Model"
+	CloseOperation="JFrame.EXIT_ON_CLOSE">
+	<menubar id="menu">
+		<menu text="File" mnemonic="VK_F">
+			<menuitem text="Load" mnemonic="VK_L" ActionCommand="AC_LoadScen" />
+			<menuitem text="Run" mnemonic="VK_R" ActionCommand="AC_RUN" />
+			<separator />
+			<menuitem text="Save" mnemonic="VK_S" ActionCommand="AC_SaveScen" />
+			<menuitem text="Save As..." mnemonic="VK_A" ActionCommand="AC_SaveScenAs" />
+			<separator />
+			<menuitem text="Exit" mnemonic="VK_E" ActionCommand="AC_Exit" />
+		</menu>
+		<menu visible="false" id="menuS" name="menuS" text="Scenario Settings" mnemonic="VK_S">
+		</menu>
+		<menu visible="false" id="menuR" name="menuR" text="Results" mnemonic="VK_R">
+		</menu>
+		<menu text="Help" mnemonic="VK_H">
+			<menuitem text="View Help" mnemonic="VK_H" enabled="true" ActionCommand="AC_Help" />
+			<separator />
+			<menuitem text="About CalLite GUI" mnemonic="VK_A" enabled="true" ActionCommand="AC_About" />
+		</menu>
+	</menubar>
+	<tabbedpane id="tabbedPane1" name="tabbedPane1">
+		<scrollpane name="Run Settings">
+				&runsettings;
+		</scrollpane>
+		<scrollpane name="Hydroclimate">
+				&hydroclimate;
+		</scrollpane>
+		<scrollpane name="Demands">
+				&demands;
+		</scrollpane>
+		<scrollpane name="Facilities">
+				&facilities;
+		</scrollpane>
+		<scrollpane name="Regulations">
+				&regulations;
+		</scrollpane>
+		<scrollpane name="Operations">
+				&operations;
+		</scrollpane>
+		<scrollpane name="Quick Results">
+				&quickresults;
+		</scrollpane>
+		<scrollpane name="Custom Results">
+				&customresults;
+		</scrollpane>
+		<scrollpane name="Map View">
+				&mapview;
+		</scrollpane>
+		<scrollpane name="Data Analysis">
+				&dataAnalysis;
+		</scrollpane>
+		<scrollpane name="Sandbox">
+				&dynamic;
+		</scrollpane>
+	</tabbedpane>
+</frame>

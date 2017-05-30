@@ -1,0 +1,25 @@
+<panel id="Custom" font="Tahoma-Italic-12"
+	layout="GridBagLayout" border="LineBorder(grey,1)">
+	<hbox>
+		<gridbagconstraints gridx="0" gridy="0" insets="5,5,5,5" />
+		<button text="Controls ..." ActionCommand="AC_Controls">
+		</button>
+		<button text="Load List/Tree" ActionCommand="CR_LoadList"
+			enabled="true">
+		</button>
+		<button text="Save List/Tree" ActionCommand="CR_SaveList"
+			enabled="true">
+		</button>
+		<button text="Clear Tree" ActionCommand="CR_ClearTree" enabled="true">
+		</button>
+	</hbox>
+	<panel name="WRIMS" id="WRIMS" layout="BorderLayout"
+		preferredsize="900,600">
+		<gridbagconstraints gridx="0" gridy="1" gridwidth="3"
+			anchor="GridBagConstraints.NORTH" />
+	</panel>
+		<button text="Help" id="CRHelp" ActionCommand="AC_Help">
+			<gridbagconstraints anchor="GridBagConstraints.NORTHWEST"
+				gridx="0" gridy="99" gridwidth="1" insets="5,5,5,0" />
+		</button>
+</panel>

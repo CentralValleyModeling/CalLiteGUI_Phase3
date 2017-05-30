@@ -1,0 +1,151 @@
+from resGen import resGen
+from ratings import *
+import glob
+import os
+
+dvFile = "../DSS_Files/2020D09EDV.dss"
+start = "31OCT1921 2400"
+end = "30SEP2003 2400"
+fPart = "2020D09E"
+aPart = "CALSIM"
+
+CVPFacilities = dict()
+
+for fl in glob.glob("./CVPFacilities/*.in"):
+    CVPFacilities[ os.path.basename(fl).split(".in")[0] ] = powerPlant(fl)
+
+trinity = resGen(
+    facility = "trinityPP",
+    dv = dvFile,
+    storage = "/%s/S1/STORAGE//1MON/%s/" % ( aPart, fPart ),
+    release = "/%s/C1/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    start = start,
+    end = end,
+    elevation = Trinity_El,
+    tailRace = Trinity_TR,
+    energyFactor = Trinity_EF,
+    unitCap = Trinity_MW_Peak,
+    characteristics = CVPFacilities[ "trinityPP" ],
+    )
+
+carr = resGen(
+    facility = "carrPP",
+    dv = dvFile,
+    storage = "/%s/S3/STORAGE//1MON/%s/" % ( aPart, fPart ),
+    release = "/%s/D100/FLOW-DELIVERY//1MON/%s/" % ( aPart, fPart ),
+    start = start,
+    end = end,
+    elevation = [Lewiston_El, Whiskeytown_El],
+    energyFactor = JFCarr_EF,
+    unitCap = JFCarr_MW_Peak,
+    characteristics = CVPFacilities[ "carrPP" ],
+    )
+
+springCreek = resGen(
+    facility = "springCreekPP",
+    dv = dvFile,
+    storage = ["/%s/S3/STORAGE//1MON/%s/" % ( aPart, fPart ),
+               "/%s/S5/STORAGE//1MON/%s/" % ( aPart, fPart )],
+    release = "/%s/D3/FLOW-DELIVERY//1MON/%s/" % ( aPart, fPart ),
+    start = start,
+    end = end,
+    elevation = [Whiskeytown_El, Keswick_El],
+    energyFactor = Spring_Creek_EF,
+    unitCap = Spring_Creek_MW_Peak,
+    characteristics = CVPFacilities[ "springCreekPP" ],
+    )
+
+shasta = resGen(
+    facility = "shastaPP",
+    dv = dvFile,
+    storage = "/%s/S4/STORAGE//1MON/%s/" % ( aPart, fPart ),
+    release = "/%s/C4/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    start = start,
+    end = end,
+    elevation = Shasta_El,
+    tailRace = Shasta_TR,
+    energyFactor = Shasta_EF,
+    unitCap = Shasta_MW_Peak,
+    characteristics = CVPFacilities[ "shastaPP" ],
+    )
+
+keswick = resGen(
+    facility = "keswickPP",
+    dv = dvFile,
+    storage = "/%s/S5/STORAGE//1MON/%s/" % ( aPart, fPart ),
+    release = "/%s/C5/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    start = start,
+    end = end,
+    elevation = Keswick_El,
+    tailRace = Keswick_TR,
+    energyFactor = Keswick_EF,
+    unitCap = Keswick_MW_Peak,
+    characteristics = CVPFacilities[ "keswickPP" ],
+    availCap = Keswick_MW_Flow,
+    )
+
+folsom = resGen(
+    facility = "folsomPP",
+    dv = dvFile,
+    storage = "/%s/S8/STORAGE//1MON/%s/" % ( aPart, fPart ),
+    release = "/%s/C8/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    start = start,
+    end = end,
+    elevation = Folsom_El,
+    tailRace = Folsom_TR,
+    energyFactor = Folsom_EF,
+    unitCap = Folsom_MW_Peak,
+    characteristics = CVPFacilities[ "folsomPP" ],
+    )
+
+nimbus = resGen(
+    facility = "nimbusPP",
+    dv = dvFile,
+    storage = "/%s/S9/STORAGE//1MON/%s/" % ( aPart, fPart ),
+    release = "/%s/C9/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    start = start,
+    end = end,
+    elevation = Natoma_El,
+    tailRace = Nimbus_TR,
+    energyFactor = Nimbus_EF,
+    unitCap = Nimbus_MW_Peak,
+    characteristics = CVPFacilities[ "nimbusPP" ],
+    availCap = Nimbus_MW_Flow,
+    )
+
+newMelones = resGen(
+    facility = "newMelonesPP",
+    dv = dvFile,
+    storage = "/%s/S10/STORAGE//1MON/%s/" % ( aPart, fPart ),
+    release = "/%s/C10/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    start = start,
+    end = end,
+    elevation = New_Melones_El,
+    tailRace = New_Melones_TR,
+    energyFactor = New_Melones_EF,
+    unitCap = New_Melones_MW_Peak,
+    characteristics = CVPFacilities[ "newMelonesPP" ],
+    )
+
+cvpSanLuis = resGen(
+    facility = "cvpSanLuisPP",
+    dv = dvFile,
+    storage = ["/%s/S11/STORAGE//1MON/%s/" % ( aPart, fPart ),
+               "/%s/S12/STORAGE//1MON/%s/" % ( aPart, fPart ),
+               "/%s/S13/STORAGE//1MON/%s/" % ( aPart, fPart ),],
+    release = "/%s/C11/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    flowIn = "/%s/D703/FLOW-DELIVERY//1MON/%s/" % ( aPart, fPart ),
+    start = start,
+    end = end,
+    elevation = San_Luis_El,
+    energyFactor = San_Luis_Gen_EF,
+    unitCap = San_Luis_Gen_MW,
+    characteristics = CVPFacilities[ "cvpSanLuisPP" ],
+    )
+
+#EMBED ELEVATION CONSTRAINTS IN RATINGS
+##########___UPDATE PATHS___###
+#ONeil
+##########___UPDATE PATHS___###
+
+
