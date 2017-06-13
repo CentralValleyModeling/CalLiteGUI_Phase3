@@ -10,13 +10,15 @@ from ratings import *
 import HEC
 import glob
 import os
+import sys 			#Taraky, DWR, 2017/06/05
 
-dvFile = "../../Scenarios/DCR2015_Base_ExistingNoCC_DV.dss"
+# dvFile = sys.argv[1] 		#Gets file name as the first parameter from command line, Taraky, DWR, 2017/06/05 
+dvFile = "../../Scenarios/DCR2015_Base_ExistingNoCC_DV.dss" 	#Commented out when DV file name can be passed as an argument, Taraky, DWR, 2017/06/05 
 outputDSS = os.path.basename(dvFile).split('.')[0] + "_SWPGen.dss"
-start = "31OCT1921 2400"
-end = "30SEP2003 2400"
-fPart = "2020D09E"
-aPart = "CALSIM"
+start = "31OCT1921 2400"		# May need to pass start time as an argument, Taraky, DWR, 2017/06/05 
+end = "30SEP2003 2400"			# May need to pass end time as an argument, Taraky, DWR, 2017/06/05
+fPart = "2020D09E"				# May need to pass fPart as an argument, Taraky, DWR, 2017/06/05
+aPart = "CALSIM"				# May need to pass aPart as an argument, Taraky, DWR, 2017/06/05
 
 ##########___POWER PLANTS___##########
 
@@ -30,9 +32,9 @@ oroville = powerPlant(
     facility = "orovillePP",
     dv = dvFile,
     outputDSS = outputDSS,
-    storage = ["/%s/S6/STORAGE//1MON/%s/" % ( aPart, fPart ),
-               "/%s/S7/STORAGE//1MON/%s/" % ( aPart, fPart )],
-    release = "/%s/C6/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    storage = ["/%s/S_Orovl/STORAGE//1MON/%s/" % ( aPart, fPart ),				#changed from S6
+               "/%s/S_Therm/STORAGE//1MON/%s/" % ( aPart, fPart )],				#changed from S7, mapped in CalLite (delta_S_Therm = C_FOLSOM - C_Therm - D_Therm - I_Therm - E_Therm )
+    release = "/%s/C_Orovl/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),			#changed from C6
     start = start,
     end = end,
     elevation = Oroville_El,
@@ -46,8 +48,8 @@ thermalito = powerPlant(
     facility = "thermalitoPP",
     dv = dvFile,
     outputDSS = outputDSS,
-    storage = "/%s/S7/STORAGE//1MON/%s/" % ( aPart, fPart ),
-    release = "/%s/C200A+C7/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    storage = "/%s/S_Therm/STORAGE//1MON/%s/" % ( aPart, fPart ),				#changed from S7
+    release = "/%s/C_Therm/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),			#Changed from C200A+C7A, Thermalito Generation at Diversion Dam and Forebay, mapped in CalLite, (C_Therm = C7 + C_200A)
     start = start,
     end = end,
     elevation = Thermalito_El,
@@ -61,11 +63,11 @@ swpSanLuis = powerPlant(
     facility = "swpSanLuisPP",
     dv = dvFile,
     outputDSS = outputDSS,
-    storage = ["/%s/S11/STORAGE//1MON/%s/" % ( aPart, fPart ),
-               "/%s/S12/STORAGE//1MON/%s/" % ( aPart, fPart ),
-               "/%s/S13/STORAGE//1MON/%s/" % ( aPart, fPart ),],
-    release = "/%s/C12/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
-    flowIn = "/%s/D805/FLOW-DELIVERY//1MON/%s/" % ( aPart, fPart ),
+    storage = ["/%s/S_SLCVP/STORAGE//1MON/%s/" % ( aPart, fPart ),				#changed from S11
+               "/%s/S_SLSWP/STORAGE//1MON/%s/" % ( aPart, fPart ),				#changed from S12
+               "/%s/S_SLEWA/STORAGE//1MON/%s/" % ( aPart, fPart ),],			#changed from S13, need to map in CalLite, created temporary dummy variable in DV.dss file
+    release = "/%s/C_SLSWP/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),			#changed from C12
+    flowIn = "/%s/D_OFBSWP/FLOW-DELIVERY//1MON/%s/" % ( aPart, fPart ),			#changed from D805
     start = start,
     end = end,
     elevation = San_Luis_El,
@@ -78,7 +80,7 @@ alamoPP = powerPlant(
     facility = "alamoPP",
     dv = dvFile,
     outputDSS = outputDSS,
-    release = "/%s/C876/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    release = "/%s/C_Alamo/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),			#changed from C876
     start = start,
     end = end,
     availCap = Power_Calc,
@@ -89,7 +91,7 @@ mojavePP = powerPlant(
     facility = "mojavePP",
     dv = dvFile,
     outputDSS = outputDSS,
-    release = "/%s/C882/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    release = "/%s/C_MojavePP/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),		#Changed from C882, Mojave PP, mapped in CalLite (C882 = C_PearBlPP-D881_PRJ-D882_PRJ)
     start = start,
     end = end,
     availCap = Power_Calc,
@@ -100,8 +102,8 @@ devilCanyonPP = powerPlant(
     facility = "devilCanyonPP",
     dv = dvFile,
     outputDSS = outputDSS,
-    storage = "/%s/S25/STORAGE//1MON/%s/" % ( aPart, fPart ), 
-    release = "/%s/C25/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    storage = "/%s/S_Silverwood/STORAGE//1MON/%s/" % ( aPart, fPart ), 			#Changed from S25, mapped in CalLite (delta_S_Silverwood = D_Silverwood - I_Silverwood - E_Silverwood)
+    release = "/%s/C_DevilCanPP/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),		#Changed from C25, Devil Canyon PP, mapped in CalLite (C25 = C_PearBlPP-D881_PRJ-D882_PRJ-D25_PRJ-D_Silverwood+I_Silverwood)
     start = start,
     end = end,
     elevation = DCanyon_El,
@@ -114,9 +116,9 @@ warnePP = powerPlant(
     facility = "warnePP",
     dv = dvFile,
     outputDSS = outputDSS,
-    storage = ["/%s/S28/STORAGE//1MON/%s/" % ( aPart, fPart ),
-               "/%s/S28/STORAGE//1MON/%s/" % ( aPart, fPart )],
-    release = "/%s/C892/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    storage = ["/%s/S_Pyramid/STORAGE//1MON/%s/" % ( aPart, fPart ),			#Changed from S28, mapped in CalLite (delta_S_Pyramid = D_Pyramid - I_Pyramid - E_Pyramid)
+               "/%s/S_Pyramid/STORAGE//1MON/%s/" % ( aPart, fPart )],			#Changed from S28, mapped in CalLite (delta_S_Pyramid = D_Pyramid - I_Pyramid - E_Pyramid) **why call twice?**		
+    release = "/%s/C_WarnePP/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),		#changed from C892
     start = start,
     end = end,
     tailRace = Pyramid_El,
@@ -128,9 +130,9 @@ castaicPP = powerPlant(
     facility = "castaicPP",
     dv = dvFile,
     outputDSS = outputDSS,
-    storage = ["/%s/S28/STORAGE//1MON/%s/" % ( aPart, fPart ),
-               "/%s/S29/STORAGE//1MON/%s/" % ( aPart, fPart )],
-    release = "/%s/C893/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    storage = ["/%s/S_Pyramid/STORAGE//1MON/%s/" % ( aPart, fPart ),			#Changed from S28, mapped in CalLite (delta_S_Pyramid = D_Pyramid - I_Pyramid - E_Pyramid)
+               "/%s/S_Castaic/STORAGE//1MON/%s/" % ( aPart, fPart )],			#Changed from S29, mapped in CalLite (delta_S_Castaic = D_Castaic - I_Castaic - E_Castaic) 
+    release = "/%s/C_CastaicPP/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),		#Changed from C893, Castaic Lake PP, mapped in CalLite (C893 = C_WarnePP-D28_PRJ-D893_PRJ-D_Pyramid+I_Pyramid)
     start = start,
     end = end,
     elevation = Pyramid_El,
@@ -151,7 +153,7 @@ banksPump = pumpPlant(
     facility = "banksPump",
     dv = dvFile,
     outputDSS = outputDSS,
-    pumping = "/%s/D419_SWP/FLOW-DELIVERY//1MON/%s/" % ( aPart, fPart ),
+    pumping = "/%s/D_Banks_SWP/FLOW-DELIVERY//1MON/%s/" % ( aPart, fPart ),		#changed from D419_SWP
     start = start,
     end = end,
     characteristics = SWPPumpFacilities[ "banksPump" ],
@@ -161,8 +163,8 @@ swpSanLuisPump = pumpPlant(
     facility = "swpSanLuisPump",
     dv = dvFile,
     outputDSS = outputDSS,
-    volIn = "/%s/D805/FLOW-DELIVERY//1MON/%s/" % ( aPart, fPart ),
-    volOut = "/%s/C12/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ), 
+    volIn = "/%s/D_OFBSWP/FLOW-DELIVERY//1MON/%s/" % ( aPart, fPart ),			#changed from D805
+    volOut = "/%s/C_SLSWP/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ), 			#changed from C12
     start = start,
     end = end,
     energyFactor = San_Luis_Pump_EF,
@@ -174,7 +176,7 @@ swpDosAmigosPump = pumpPlant(
     facility = "swpDosAmigosPump",
     dv = dvFile,
     outputDSS = outputDSS,
-    pumping = "/%s/C825/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    pumping = "/%s/C_DosAmigo/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),		#Changed from C825, SWP Dos Amigos on the CA Aquaduct, mapped in CalLite (C825 = C_SWPJU+D_CVPJUSWP-D824_PRJ)
     start = start,
     end = end,
     characteristics = SWPPumpFacilities[ "swpDosAmigosPump" ],
@@ -184,7 +186,7 @@ buenaVistaPump = pumpPlant(
     facility = "buenaVistaPump",
     dv = dvFile,
     outputDSS = outputDSS,
-    pumping = "/%s/C860/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    pumping = "/%s/C_BuenaVistaPP/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),	#Changed from C860, Buena Vista PP, mapped in CalLite (C860 = C_CVC+I _Kern-D859_PRJ)
     start = start,
     end = end,
     characteristics = SWPPumpFacilities[ "buenaVistaPump" ],
@@ -194,7 +196,7 @@ teerinkPump = pumpPlant(
     facility = "teerinkPump",
     dv = dvFile,
     outputDSS = outputDSS,
-    pumping = "/%s/C862/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    pumping = "/%s/C_WheelerPP/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),		#Wheeler Ridge PP, mapped in CalLite (C862 = C_CVC+I _Kern-D859_PRJ-D862_PRJ)
     start = start,
     end = end,
     characteristics = SWPPumpFacilities[ "teerinkPump" ],
@@ -204,7 +206,7 @@ chrismanPump = pumpPlant(
     facility = "chrismanPump",
     dv = dvFile,
     outputDSS = outputDSS,
-    pumping = "/%s/C864/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    pumping = "/%s/C_ChrisPP/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),		#changed from C864
     start = start,
     end = end,
     characteristics = SWPPumpFacilities[ "chrismanPump" ],
@@ -214,7 +216,7 @@ edmonstonPump = pumpPlant(
     facility = "edmonstonPump",
     dv = dvFile,
     outputDSS = outputDSS,
-    pumping = "/%s/C865/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    pumping = "/%s/C_ChrisPP/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),		#changed from C865, (C865=C864)
     start = start,
     end = end,
     characteristics = SWPPumpFacilities[ "edmonstonPump" ],
@@ -224,7 +226,7 @@ pearblossomPump = pumpPlant(
     facility = "pearblossomPump",
     dv = dvFile,
     outputDSS = outputDSS,
-    pumping = "/%s/C880/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    pumping = "/%s/C_PearBlPP/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),		#changed from C880
     start = start,
     end = end,
     characteristics = SWPPumpFacilities[ "pearblossomPump" ],
@@ -234,7 +236,7 @@ buenaVistaPump = pumpPlant(
     facility = "buenaVistaPump",
     dv = dvFile,
     outputDSS = outputDSS,
-    pumping = "/%s/C860/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    pumping = "/%s/C_BuenaVistaPP/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),	#Changed from C860, Buena Vista PP, mapped in CalLite (C860 = C_CVC+I _Kern_S2D-D859_PRJ)
     start = start,
     end = end,
     characteristics = SWPPumpFacilities[ "buenaVistaPump" ],
@@ -244,7 +246,7 @@ osoPump = pumpPlant(
     facility = "osoPump",
     dv = dvFile,
     outputDSS = outputDSS,
-    pumping = "/%s/C890/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    pumping = "/%s/C_Oso/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),			#changed from C890
     start = start,
     end = end,
     characteristics = SWPPumpFacilities[ "osoPump" ],
@@ -254,7 +256,7 @@ southBayPump = pumpPlant(
     facility = "southBayPump",
     dv = dvFile,
     outputDSS = outputDSS,
-    pumping = "/%s/D801/FLOW-DELIVERY//1MON/%s/" % ( aPart, fPart ),
+    pumping = "/%s/D_SBay/FLOW-DELIVERY//1MON/%s/" % ( aPart, fPart ),			#changed from D801
     start = start,
     end = end,
     characteristics = SWPPumpFacilities[ "southBayPump" ],
@@ -264,7 +266,7 @@ delVallePump = pumpPlant(
     facility = "delVallePump",
     dv = dvFile,
     outputDSS = outputDSS,
-    pumping = "/%s/D811/FLOW-DELIVERY//1MON/%s/" % ( aPart, fPart ),
+    pumping = "/%s/D_DelValle/FLOW-DELIVERY//1MON/%s/" % ( aPart, fPart ),		#changed from D811
     start = start,
     end = end,
     characteristics = SWPPumpFacilities[ "delVallePump" ],
@@ -274,7 +276,7 @@ lasPerillasPump = pumpPlant(
     facility = "lasPerillasPump",
     dv = dvFile,
     outputDSS = outputDSS,
-    pumping = "/%s/D850/FLOW-DELIVERY//1MON/%s/" % ( aPart, fPart ),
+    pumping = "/%s/C_CoastAqdct/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),		#changed from D850, Changed form FLOW-DELIVERY to FLOW-CHANNEL
     start = start,
     end = end,
     characteristics = SWPPumpFacilities[ "lasPerillasPump" ],
@@ -284,7 +286,7 @@ badgerHillPump = pumpPlant(
     facility = "badgerHillPump",
     dv = dvFile,
     outputDSS = outputDSS,
-    pumping = "/%s/C866/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),
+    pumping = "/%s/C_CoastAqdct/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),		#changed from C866, C866 = D850
     start = start,
     end = end,
     characteristics = SWPPumpFacilities[ "badgerHillPump" ],
