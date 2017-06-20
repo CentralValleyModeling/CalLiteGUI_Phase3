@@ -10,10 +10,10 @@ from ratings import *
 import HEC
 import glob
 import os
-import sys 			#Taraky, DWR, 2017/06/05
+import sys 						#Taraky, DWR, 2017/06/05
 
-# dvFile = sys.argv[1] 		#Gets file name as the first parameter from command line, Taraky, DWR, 2017/06/05 
-dvFile = "../../Scenarios/DCR2015_Base_ExistingNoCC_DV.dss" 	#Commented out when DV file name can be passed as an argument, Taraky, DWR, 2017/06/05 
+# dvFile = sys.argv[1] 			#Gets file name as the first parameter from command line, Taraky, DWR, 2017/06/05 
+dvFile = "../../Scenarios/DCR2015_Base_ExistingNoCC_DV.dss" 					#Commented out when DV file name can be passed as an argument, Taraky, DWR, 2017/06/05 
 outputDSS = os.path.basename(dvFile).split('.')[0] + "_LtGen.dss"
 start = "31OCT1921 2400"		# May need to pass start time, Taraky, DWR, 2017/06/05 
 end = "30SEP2003 2400"			# May need to pass end time, Taraky, DWR, 2017/06/05
@@ -62,7 +62,7 @@ springCreek = powerPlant(
     dv = dvFile,
     outputDSS = outputDSS,
     storage = ["/%s/S_Wkytn/STORAGE//1MON/%s/" % ( aPart, fPart ), 				#changed from S3, Taraky, DWR, 2017/06/05
-               "/%s/S_Kswck/STORAGE//1MON/%s/" % ( aPart, fPart )],				#changed from S5, mapped in CalLite (delta_S_Kswck = C_FOLSOM - C_Kswck - D_Kswck - I_Kswck - E_Kswck), Taraky, DWR, 2017/06/05
+               "/%s/S_Kswck/STORAGE//1MON/%s/" % ( aPart, fPart )],				#changed from S5, mapped in CalLite (delta_S_Kswck = - AD_Kswck_Actual - E_Kswck), Taraky, DWR, 2017/06/05
     release = "/%s/D_Spring/FLOW-TUNNEL//1MON/%s/" % ( aPart, fPart ), 			#changed from D3, changed from FLOW-DELIVERY to FLOW-TUNNEL, Taraky, DWR, 2017/06/05
     start = start,
     end = end,
@@ -91,7 +91,7 @@ keswick = powerPlant(
     facility = "keswickPP",
     dv = dvFile,
     outputDSS = outputDSS,
-    storage = "/%s/S_Kswck/STORAGE//1MON/%s/" % ( aPart, fPart ),				#changed from S5, mapped in CalLite (delta_S_Kswck = C_FOLSOM - C_Kswck - D_Kswck - I_Kswck - E_Kswck), Taraky, DWR, 2017/06/05
+    storage = "/%s/S_Kswck/STORAGE//1MON/%s/" % ( aPart, fPart ),				#changed from S5, mapped in CalLite (delta_S_Kswck = - AD_Kswck_Actual - E_Kswck), Taraky, DWR, 2017/06/05
     release = "/%s/C_Kswck/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),			#changed from C5, Taraky, DWR, 2017/06/05
     start = start,
     end = end,
@@ -122,7 +122,7 @@ nimbus = powerPlant(
     facility = "nimbusPP",
     dv = dvFile,
     outputDSS = outputDSS,
-    storage = "/%s/S_Nimbus/STORAGE//1MON/%s/" % ( aPart, fPart ),				#changed from S9, mapped in CalLite (delta_S_Nimbus = C_FOLSOM - C_NIMBUS - D_Nimbus - I_Nimbus - E_Nimbus), Taraky, DWR, 2017/06/05
+    storage = "/%s/S_Nimbus/STORAGE//1MON/%s/" % ( aPart, fPart ),				#changed from S9, mapped in CalLite (delta_S_Nimbus = - AD_Nimbus_Actual + I_Nimbus_S2D - E_Nimbus), Taraky, DWR, 2017/06/05
     release = "/%s/C_Nimbus/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),			#changed from C9, Taraky, DWR, 2017/06/05
     start = start,
     end = end,
@@ -301,7 +301,7 @@ redBluffPump = pumpPlant(
     dv = dvFile,
     outputDSS = outputDSS,
     pumping = ["/%s/D171/FLOW-DELIVERY//1MON/%s/" % ( aPart, fPart ),			#no change needed, Taraky, DWR, 2017/06/05
-               "/%s/C171/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),],			#Tehama-Colusa Relift and Red Bluff Pumping Plant, mapped in CalLite (C171 = D112-D171), Taraky, DWR, 2017/06/05
+               "/%s/C_TCCnl/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),],		#Tehama-Colusa Relift and Red Bluff Pumping Plant, mapped in CalLite (C_TCCnl = D112-D171), Taraky, DWR, 2017/06/05
     start = start,
     end = end,
     characteristics = CVPPumpFacilities[ "redBluffPump" ],
@@ -321,7 +321,7 @@ sanLuisOtherPump = pumpPlant(
     facility = "sanLuisOtherPump",
     dv = dvFile,
     outputDSS = outputDSS,
-    pumping = "/%s/C832/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),				#San Luis Relift Pumping plant, mapped in CalLite (C832 = C_CVPJU), Taraky, DWR, 2017/06/05
+    pumping = "/%s/C_CVPJU/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),			#Changed from C832, San Luis Relift Pumping plant, Taraky, DWR, 2017/06/05
     start = start,
     end = end,
     characteristics = CVPPumpFacilities[ "sanLuisOtherPump" ],
@@ -341,7 +341,7 @@ tcOtherPump = pumpPlant(
     facility = "tcOtherPump",
     dv = dvFile,
     outputDSS = outputDSS,
-    pumping = "/%s/C171/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),				# mapped in CalLite from CalSim (C171 = D112 - D171), Taraky, DWR, 2017/06/05
+    pumping = "/%s/C_TCCnl/FLOW-CHANNEL//1MON/%s/" % ( aPart, fPart ),			# mapped in CalLite from CalSim (C_TCCnl = D112 - D171), Taraky, DWR, 2017/06/05
     start = start,
     end = end,
     characteristics = CVPPumpFacilities[ "tcOtherPump" ],
