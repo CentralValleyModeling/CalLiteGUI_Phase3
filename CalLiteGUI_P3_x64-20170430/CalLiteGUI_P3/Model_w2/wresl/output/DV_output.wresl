@@ -1,6 +1,15 @@
-/* File to get output for comparison 
+/*
+ File to get output for comparison 
 Nazrul Islam
-DWR, 07/20/2010 */
+DWR, 07/20/2010 
+*/
 
 include 'swpcvpdeloutput.wresl'
 include 'SV_output.wresl'
+
+/*
+Added wresl script to calculate storages, and arcs needed for power calculation using ltgen & swpgen jython script
+Taraky, DWR, 2017/06/13
+*/
+
+include 'PowerOutput.wresl'
