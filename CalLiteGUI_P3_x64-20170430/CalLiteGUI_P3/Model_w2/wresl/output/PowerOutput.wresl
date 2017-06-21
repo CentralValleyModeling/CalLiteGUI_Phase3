@@ -38,7 +38,6 @@ define C_TCCnl {alias D112-D171 kind 'FLOW-CHANNEL' units 'CFS'} ! CalSim arc C1
 
 /* Output for SWP Power Calculation in SWPGen.py */
 
-I_Therm
 define E_Therm {lower unbounded kind 'EVAPORATION' units 'CFS'}
 define A_Therm {std kind 'SURFACE-AREA' units 'ACRES'}
 define evap_S_Therm {timeseries kind 'EVAPORATION-RATE' units 'IN'}
