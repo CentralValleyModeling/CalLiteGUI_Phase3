@@ -94,9 +94,9 @@ define C_CastaicPP {alias C_WarnePP-D28_PRJ-D893_PRJ-D_Pyramid+I_Pyramid kind 'F
 
 define C_DosAimgosPP {alias C_SWPJU+D_CVPJUSWP-D824_PRJ kind 'FLOW-CHANNEL' units 'CFS'} ! CalSim arc C825
 
-define C_BnVstPP {alias C_CVC+I _Kern-D859_PRJ kind 'FLOW-CHANNEL' units 'CFS'} ! CalSim arc C860
+define C_BnVstPP {alias C_CVC+I_Kern-D859_PRJ kind 'FLOW-CHANNEL' units 'CFS'} ! CalSim arc C860
 
-define C_WhlrPP {alias C_CVC+I _Kern-D859_PRJ-D862_PRJ kind 'FLOW-CHANNEL' units 'CFS'} ! CalSim arc C862
+define C_WhlrPP {alias C_CVC+I_Kern-D859_PRJ-D862_PRJ kind 'FLOW-CHANNEL' units 'CFS'} ! CalSim arc C862
 
 
 
