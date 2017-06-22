@@ -92,7 +92,7 @@ define C_DvlCnynPP {alias C_PearBlPP-D881_PRJ-D882_PRJ-D25_PRJ-D_Silverwood+I_Si
 
 define C_CastaicPP {alias C_WarnePP-D28_PRJ-D893_PRJ-D_Pyramid+I_Pyramid kind 'FLOW-CHANNEL' units 'CFS'} ! CalSim arc C893
 
-define C_DosAimgosPP {alias C_SWPJU+D_CVPJUSWP-D824_PRJ kind 'FLOW-CHANNEL' units 'CFS'} ! CalSim arc C825
+define C_DosAmigosPP {alias C_SWPJU+D_CVPJUSWP-D824_PRJ kind 'FLOW-CHANNEL' units 'CFS'} ! CalSim arc C825
 
 define C_BnVstPP {alias C_CVC+I_Kern-D859_PRJ kind 'FLOW-CHANNEL' units 'CFS'} ! CalSim arc C860
 
