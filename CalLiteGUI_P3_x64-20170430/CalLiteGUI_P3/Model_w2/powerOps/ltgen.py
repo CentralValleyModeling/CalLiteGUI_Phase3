@@ -13,12 +13,12 @@ import os
 import sys 						#Taraky, DWR, 2017/06/05
 
 # dvFile = sys.argv[1] 			#Gets file name as the first parameter from command line, Taraky, DWR, 2017/06/05 
-dvFile = "../../Scenarios/DCR2015_Base_ExistingNoCC_DV.dss" 					#Commented out when DV file name can be passed as an argument, Taraky, DWR, 2017/06/05 
+dvFile = "../../Scenarios/DEFAULT_PowerCalculation2_DV.dss" 					#Commented out when DV file name can be passed as an argument, Taraky, DWR, 2017/06/05 
 outputDSS = os.path.basename(dvFile).split('.')[0] + "_LtGen.dss"
 start = "31OCT1921 2400"		# May need to pass start time, Taraky, DWR, 2017/06/05 
 end = "30SEP2003 2400"			# May need to pass end time, Taraky, DWR, 2017/06/05
 fPart = "2020D09E"				# May need to pass fPart, Taraky, DWR, 2017/06/05
-aPart = "CALSIM"				# May need to pass aPart, Taraky, DWR, 2017/06/05
+aPart = "CALLITE"				# May need to pass aPart, Taraky, DWR, 2017/06/05
 
 outputDSS = HEC.openDSS(outputDSS)
 
