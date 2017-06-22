@@ -12,10 +12,10 @@ define A_Kswck_last {select area from res_info given storage=1000*S_Kswck(-1) us
 define A_Kswck_forward {select area from res_info given storage=1050*S_Kswck(-1) use linear where res_num=5}	
 define A_Kswck_back {select area from res_info given storage=950*S_Kswck(-1) use linear where res_num=5}	
 define coefev_Kswck {value (A_Kswck_forward - A_Kswck_back)/(100*max(0.01,S_Kswck(-1)))}	
-goal area_Kswck {A_Kswck=A_Kswck_last+1000*coefev5*S_Kswck-1000*coefev_Kswck*S_Kswck(-1)}
+goal area_Kswck {A_Kswck=A_Kswck_last+1000*coefev_Kswck*S_Kswck-1000*coefev_Kswck*S_Kswck(-1)}
 goal evap_Kswck {E_Kswck*cfs_af=(evap_S_Kswck/24)*A_Kswck_last+(evap_S_Kswck/24)*A_Kswck} 
-define delta_S_Kswck {alias -AD_Kswck_Actual - E_Kswck kind 'FLOW-CHANNEL' units 'CFS'} 
-define S_Kswck {alias S_Kswck(-1) + delta_S_Kswck*cfs_taf kind 'FLOW-CHANNEL' units 'TAF'} ! CalSim arc S5
+define delta_S_Kswck {alias -AD_Kswck_Actual - E_Kswck kind 'STORAGE' units 'CFS'} 
+define S_Kswck {alias S_Kswck(-1) + delta_S_Kswck*cfs_taf kind 'STORAGE' units 'TAF'} ! CalSim arc S5
 
 define E_Nimbus {lower unbounded kind 'EVAPORATION' units 'CFS'}
 define A_Nimbus {std kind 'SURFACE-AREA' units 'ACRES'}
@@ -26,8 +26,8 @@ define A_Nimbus_back {select area from res_info given storage=950*S_Nimbus(-1) u
 define coefev_Nimbus {value (A_Nimbus_forward - A_Nimbus_back)/(100*max(0.01,S_Nimbus(-1)))}
 goal area_Nimbus {A_Nimbus=A_Nimbus_last+1000*coefev_Nimbus*S_Nimbus-1000*coefev_Nimbus*S_Nimbus(-1)}
 goal evap_Nimbus {E_Nimbus*cfs_af=(evap_S_Nimbus/24)*A_Nimbus_last+(evap_S_Nimbus/24)*A_Nimbus}
-define delta_S_Nimbus {alias -AD_Nimbus_Actual - E_Nimbus + I_Nimbus_S2D kind 'FLOW-CHANNEL' units 'CFS'} 
-define S_Nimbus {alias S_Nimbus(-1) + delta_S_Nimbus*cfs_taf kind 'FLOW-CHANNEL' units 'TAF'} ! CalSim arc s9
+define delta_S_Nimbus {alias -AD_Nimbus_Actual - E_Nimbus + I_Nimbus_S2D kind 'STORAGE' units 'CFS'} 
+define S_Nimbus {alias S_Nimbus(-1) + delta_S_Nimbus*cfs_taf kind 'STORAGE' units 'TAF'} ! CalSim arc s9
 
 define S_SLEWA {value 0} ! CalSim arc S13
 
@@ -47,8 +47,8 @@ define A_Therm_back {select area from res_info given storage=950*S_Therm(-1) use
 define coefev_Therm {value (A_Therm_forward - A_Therm_back)/(100*max(0.01,S_Therm(-1)))}
 goal area_Therm {A_Therm=A_Therm_last+1000*coefev_Therm*S_Therm-1000*coefev_Therm*S_Therm(-1)}
 goal evap_Therm {E_Therm*cfs_af=(evap_S_Therm/24)*A_Therm_last+(evap_S_Therm/24)*A_Therm}
-define delta_S_Therm {alias -AD_Therm_Actual - E_Therm + I_KellyRidge_S2D kind 'FLOW-CHANNEL' units 'CFS'} 
-define S_Therm {alias S_Therm(-1) + delta_S_Therm*cfs_taf kind 'FLOW-CHANNEL' units 'TAF'} ! CalSim arc S7
+define delta_S_Therm {alias -AD_Therm_Actual - E_Therm + I_KellyRidge_S2D kind 'STORAGE' units 'CFS'} 
+define S_Therm {alias S_Therm(-1) + delta_S_Therm*cfs_taf kind 'STORAGE' units 'TAF'} ! CalSim arc S7
 
 define E_Silverwood {lower unbounded kind 'EVAPORATION' units 'CFS'}
 define A_Silverwood {std kind 'SURFACE-AREA' units 'ACRES'}
@@ -59,8 +59,8 @@ define A_Silverwood_back {select area from res_info given storage=950*S_Silverwo
 define coefev_Silverwood {value (A_Silverwood_forward - A_Silverwood_back)/(100*max(0.01,S_Silverwood(-1)))}
 goal area_Silverwood {A_Silverwood=A_Silverwood_last+1000*coefev_Silverwood*S_Silverwood-1000*coefev_Silverwood*S_Silverwood(-1)}
 goal evap_Silverwood {E_Silverwood*cfs_af=(evap_S_Silverwood/24)*A_Silverwood_last+(evap_S_Silverwood/24)*A_Silverwood}
-define delta_S_Silverwood {alias D_Silverwood - I_Silverwood - E_Silverwood kind 'FLOW-CHANNEL' units 'CFS'} 
-define S_Silverwood {alias S_Silverwood(-1) + delta_S_Silverwood*cfs_taf kind 'FLOW-CHANNEL' units 'TAF'} ! CalSim arc S25
+define delta_S_Silverwood {alias D_Silverwood - I_Silverwood - E_Silverwood kind 'FSTORAGE' units 'CFS'} 
+define S_Silverwood {alias S_Silverwood(-1) + delta_S_Silverwood*cfs_taf kind 'STORAGE' units 'TAF'} ! CalSim arc S25
 
 define E_Pyramid {lower unbounded kind 'EVAPORATION' units 'CFS'}
 define A_Pyramid {std kind 'SURFACE-AREA' units 'ACRES'}
@@ -68,11 +68,11 @@ define evap_S_Pyramid {timeseries kind 'EVAPORATION-RATE' units 'IN'}
 define A_Pyramid_last {select area from res_info given storage=1000*S_Pyramid(-1) use linear where res_num=28}
 define A_Pyramid_forward {select area from res_info given storage=1050*S_Pyramid(-1) use linear where res_num=28}
 define A_Pyramid_back {select area from res_info given storage=950*S_Pyramid(-1) use linear where res_num=28}
-define coefev_Pyramid {value (A_Pyramid_forward - A_Pyramid_back)/(100*max(0.01,S2_Pyramid(-1)))}
+define coefev_Pyramid {value (A_Pyramid_forward - A_Pyramid_back)/(100*max(0.01,S_Pyramid(-1)))}
 goal area_Pyramid {A_Pyramid=A_Pyramid_last+1000*coefev_Pyramid*S_Pyramid-1000*coefev_Pyramid*S_Pyramid(-1)}
 goal evap_Pyramid {E_Pyramid*cfs_af=(evap_S_Pyramid/24)*A_Pyramid_last+(evap_S_Pyramid/24)*A_Pyramid}
-define delta_S_Pyramid {alias D_Pyramid - I_Pyramid - E_Pyramid  kind 'FLOW-CHANNEL' units 'CFS'}
-define S_Pyramid {alias S_Pyramid(-1) + delta_S_Silverwood*cfs_taf kind 'FLOW-CHANNEL' units 'TAF'} ! CalSim arc S28
+define delta_S_Pyramid {alias D_Pyramid - I_Pyramid - E_Pyramid  kind 'STORAGE' units 'CFS'}
+define S_Pyramid {alias S_Pyramid(-1) + delta_S_Silverwood*cfs_taf kind 'STORAGE' units 'TAF'} ! CalSim arc S28
 
 define E_Castaic {lower unbounded kind 'EVAPORATION' units 'CFS'}
 define A_Castaic {std kind 'SURFACE-AREA' units 'ACRES'}
@@ -83,8 +83,8 @@ define A_Castaic_back {select area from res_info given storage=950*S_Castaic(-1)
 define coefev_Castaic {value (A_Castaic_forward - A_Castaic_back)/(100*max(0.01,S_Castaic(-1)))}
 goal area_Castaic {A_Castaic=A_Castaic_last+1000*coefev_Castaic*S_Castaic-1000*coefev_Castaic*S_Castaic(-1)}
 goal evap_Castaic {E_Castaic*cfs_af=(evap_S_Castaic/24)*A_Castaic_last+(evap_S_Castaic/24)*A_Castaic}
-define delta_S_Castaic {alias -AD_Castaic_S2D - E_Castaic kind 'FLOW-CHANNEL' units 'CFS'}  
-define S_Castaic {alias S_Castaic(-1) + delta_S_Castaic*cfs_taf kind 'FLOW-Channel' units 'TAF'} !CalSim arc S29
+define delta_S_Castaic {alias -AD_Castaic_S2D - E_Castaic kind 'STORAGE' units 'CFS'}  
+define S_Castaic {alias S_Castaic(-1) + delta_S_Castaic*cfs_taf kind 'STORAGE' units 'TAF'} !CalSim arc S29
 
 define C_MjvPP {alias C_PearBlPP-D881_PRJ-D882_PRJ kind 'FLOW-CHANNEL' units 'CFS'} ! CalSim arc C882
 
