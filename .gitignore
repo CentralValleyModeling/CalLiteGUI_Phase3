@@ -1,32 +1,39 @@
-1 # Compiled source # 
-2 ################### 
-3 *.com 
-4 *.class 
-5 *.dll 
-6 *.exe 
-7 *.o 
-8 *.so 
-
-# Ignore Directories #
+# Directories #
 ######################
 bin/
 
-10 # Packages # 
-11 ############ 
-12 # it's better to unpack these files and commit the raw source 
-13 # git has its own built in compression methods 
-14 *.7z 
-15 *.dmg 
-16 *.gz 
-17 *.iso 
-18 *.jar 
-19 *.rar 
-20 *.tar 
-21 *.zip 
+# Files #
+#########
+*.dsc
+*.pkc
+*.DSc
+
+
+# Compiled source # 
+################### 
+*.com 
+*.class 
+*.dll 
+*.exe 
+*.o 
+*.so 
+
+# Packages # 
+############ 
+# it's better to unpack these files and commit the raw source 
+# git has its own built in compression methods 
+*.7z 
+*.dmg 
+*.gz 
+*.iso 
+*.jar 
+*.rar 
+*.tar 
+*.zip 
 
 # Logs and databases # 
-24 ###################### 
-25 *.log 
-26 *.sql 
-27 *.sqlite 
+###################### 
+*.log 
+*.sql 
+*.sqlite 
 
