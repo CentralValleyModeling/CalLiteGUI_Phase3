@@ -12,8 +12,8 @@ import glob
 import os
 import sys 						#Taraky, DWR, 2017/06/05
 
-# dvFile = sys.argv[1] 			#Gets file name as the first parameter from command line, Taraky, DWR, 2017/06/05 
-dvFile = "../../Scenarios/DEFAULT_PowerCalculation2_DV.dss" 					#Commented out when DV file name can be passed as an argument, Taraky, DWR, 2017/06/05 
+dvFile = sys.argv[1] 			#Gets file name as the first parameter from command line, Taraky, DWR, 2017/06/05 
+#dvFile = "../../Scenarios/DEFAULT_PowerCalculation2_DV.dss" 					#Commented out when DV file name can be passed as an argument, Taraky, DWR, 2017/06/05 
 outputDSS = os.path.basename(dvFile).split('.')[0] + "_SWPGen.dss"
 start = "31OCT1921 2400"		# May need to pass start time as an argument, Taraky, DWR, 2017/06/05 
 end = "30SEP2003 2400"			# May need to pass end time as an argument, Taraky, DWR, 2017/06/05

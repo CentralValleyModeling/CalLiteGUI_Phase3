@@ -1,15 +1,9 @@
 rem @echo off
-rem This file runs the power module script for CVP and SWP 
+rem This file calls "PowerScript" batch file from "\Model_w2\poweOps" folder  
 rem Author: Taraky
-rem Date: 03/01/2017
+rem Date: 04/03/2017
 
-title Power Script
+title Power Script 
 
-rem enable jython environment
-rem jython
-
-rem run jython power script for CVP
-START/WAIT/B %~dp0..\vscript\lib\vista\jython\bin\jython ltgen.py 
-
-rem run jython power script for SWP
-START/WAIT/B %~dp0..\vscript\lib\vista\jython\bin\jython swpgen.py
+rem calls the "PowerScript" batch file which runs ltgen.py and swpgen.py jython script
+%~dp0PowerScript.bat "%~dp0..\..\Scenarios\DEFAULT_PowerCalculation2_DV.dss"
