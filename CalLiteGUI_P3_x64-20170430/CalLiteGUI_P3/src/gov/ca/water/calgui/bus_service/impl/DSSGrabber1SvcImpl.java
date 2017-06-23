@@ -236,7 +236,7 @@ public class DSSGrabber1SvcImpl implements IDSSGrabber1Svc {
 
 		locationName = locationName.trim();
 
-		if (locationName.startsWith("/")) {
+		if (locationName.startsWith("/") || locationName.startsWith("*")) {
 			// Handle names passed from WRIMS GUI
 			String parts[] = locationName.split("/");
 			title = locationName;
@@ -557,7 +557,7 @@ public class DSSGrabber1SvcImpl implements IDSSGrabber1Svc {
 			// TODO: Note hard-coded D- and E-PART
 			result = (TimeSeriesContainer) hD
 					.get("/" + hecAPart + "/" + dssNames[0] + "/01JAN1930/1MON/" + hecFParts[0], true);
-			System.out.println("/" + hecAPart + "/" + dssNames[0] + "/01JAN1930/1MON/" + hecFParts[0]);
+
 			if ((result == null) || (result.numberValues < 1)) {
 
 				String message;
@@ -688,7 +688,7 @@ public class DSSGrabber1SvcImpl implements IDSSGrabber1Svc {
 		return result;
 	}
 
-	protected String checkReadiness() {
+	public String checkReadiness() {
 		String result = null;
 		if (startTime == -1)
 			result = "Date range is not set in DSSGrabber.";
@@ -696,7 +696,8 @@ public class DSSGrabber1SvcImpl implements IDSSGrabber1Svc {
 			result = "Base scenario is not set in DSSGrabber.";
 		else if (primaryDSSName == null)
 			result = "Base scenario is not set in DSSGrabber.";
-		LOG.debug(result);
+		if (result != null)
+			LOG.debug("Failed readiness check: " + result);
 		return result;
 	}
 
@@ -1105,7 +1106,7 @@ public class DSSGrabber1SvcImpl implements IDSSGrabber1Svc {
 
 							results[month][i] = new TimeSeriesContainer();
 
-							if (month == 12) {
+							if ((month == 12) && (annualTAFs != null)) {
 
 								// Annual totals - grab from annualTAFs
 								n = annualTAFs[i].length;
