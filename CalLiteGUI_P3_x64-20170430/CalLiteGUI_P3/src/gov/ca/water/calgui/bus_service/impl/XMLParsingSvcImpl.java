@@ -96,7 +96,7 @@ public final class XMLParsingSvcImpl implements IXMLParsingSvc {
 			Component component = this.swingEngine.find(compId);
 			if (component instanceof JCheckBox) {
 				if (!((JCheckBox) component).getName().equals(compId)) {
-					System.out.println(compId + " " + component.getName());
+					// System.out.println(compId + " " + component.getName());
 					((JCheckBox) component).setName(compId);
 				}
 			} else if (component instanceof JRadioButton) {
@@ -167,7 +167,7 @@ public final class XMLParsingSvcImpl implements IXMLParsingSvc {
 		List<String> resultTabNames = Arrays.asList("WRIMS", "External PDF", "Reporting", "schematics",
 				"Data_tabbedPane2", "controls");
 		List<String> names = new java.util.ArrayList<String>();
-		System.out.println("****" + compId);
+		// System.out.println("****" + compId);
 		getAllThePanelNamesOfParent(swingEngine.find(compId), names);
 
 		boolean con = false;
@@ -202,7 +202,7 @@ public final class XMLParsingSvcImpl implements IXMLParsingSvc {
 		if (component instanceof JPanel) {
 			if (((JPanel) component).getName() != null) {
 				names.add(((JPanel) component).getName());
-				System.out.println(names.toString());
+				// System.out.println(names.toString());
 			}
 		}
 
