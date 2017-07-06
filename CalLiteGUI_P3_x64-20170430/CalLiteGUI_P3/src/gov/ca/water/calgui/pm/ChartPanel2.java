@@ -10,15 +10,11 @@ import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.axis.NumberAxis;
-import org.jfree.data.time.Month;
 import org.jfree.data.time.TimeSeries;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 
-import gov.ca.water.calgui.bus_service.impl.DSSGrabber1SvcImpl;
 import gov.ca.water.calgui.constant.Constant;
-import hec.heclib.util.HecTime;
-import hec.io.TimeSeriesContainer;
 
 public class ChartPanel2 extends JPanel {
 
@@ -29,57 +25,10 @@ public class ChartPanel2 extends JPanel {
 
 	private JFreeChart[] charts = new JFreeChart[12];
 
-	private TimeSeries[][] series;
-	private TimeSeries[][][] ex_series;
+	private TimeSeries[][][] ex_series = PM_Data.getInstance().getExSeries();
 	private XYSeries[] dataSeries = new XYSeries[12];
 	private XYSeriesCollection[] xydatasets = new XYSeriesCollection[12];
 	private ChartPanel[] panels = new ChartPanel[12];
-
-	/**
-	 * Reads data in bulk
-	 */
-	private void readManyTimeSeries() {
-		DSSGrabber1SvcImpl dg = (DSSGrabber1SvcImpl) DG_Handle.getInstance().getDG();
-		series = new TimeSeries[Constant.BPARTS.length][Constant.CPARTS.length];
-		ex_series = new TimeSeries[Constant.BPARTS.length][Constant.CPARTS.length][14];
-		HecTime ht = new HecTime();
-		for (int i = 0; i < Constant.BPARTS.length; i++) {
-			for (int j = 0; j < Constant.CPARTS.length; j++) {
-
-				dg.setBase(DG_Handle.getInstance().getBaseName());
-				String seriesName = "/HYDROPOWER/" + Constant.BPARTS[i] + "/" + Constant.CPARTS[j]
-						+ "/01JAN1930/1MON/POWERPLANT-GENERATION/";
-				dg.setLocation("*" + seriesName);
-				dg.setDateRange("FEB1924-feb2003");
-				dg.setPrimaryDSSName(Constant.BPARTS[i] + "/" + Constant.CPARTS[j] + "/POWERPLANT-GENERATION");
-
-				dg.checkReadiness();
-
-				TimeSeriesContainer[] tscs = dg.getPrimarySeries(seriesName);
-				series[i][j] = new TimeSeries(Constant.BPARTS[i] + "/" + Constant.CPARTS[j]);
-
-				for (int k = 0; k < tscs[0].numberValues; k++) {
-					ht.set(tscs[0].times[k]);
-					series[i][j].addOrUpdate(new Month(ht.month(), ht.year()), tscs[0].values[k]);
-				}
-
-				TimeSeriesContainer[][] ex_tscs = dg.getExceedanceSeries(tscs);
-				for (int l = 0; l < 14; l++) {
-					ex_series[i][j][l] = new TimeSeries(
-							Constant.BPARTS[i] + "/" + Constant.CPARTS[j] + " " + Integer.toString(l));
-					for (int k = 0; k < ex_tscs[l][0].numberValues; k++) {
-						ht.set(tscs[0].times[k]);
-						ex_series[i][j][l].addOrUpdate(new Month(ht.month(), ht.year()), ex_tscs[l][0].values[k]);
-
-					}
-				}
-			}
-		}
-	}
-
-	public TimeSeries[][] getSeries() {
-		return series;
-	}
 
 	private int getMonth(String month) {
 		int i = "janfebmaraprmayjunjulaugsepoctnovdec".indexOf(month.toLowerCase()) / 3;
@@ -112,8 +61,6 @@ public class ChartPanel2 extends JPanel {
 	public ChartPanel2() {
 
 		super();
-
-		readManyTimeSeries();
 		this.setLayout(new GridLayout(0, 4));
 		// Set up time series charts
 		for (int i = 0; i < 12; i++) {

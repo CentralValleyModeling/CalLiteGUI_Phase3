@@ -21,13 +21,12 @@ public class BarChartPanel extends JPanel {
 	private static final long serialVersionUID = -1820330233114070810L;
 	private JFreeChart chart;
 
-	public BarChartPanel(ChartPanel2 cp2) {
+	public BarChartPanel() {
 
 		DefaultCategoryDataset dataset = new DefaultCategoryDataset();
 
-		TimeSeries[][] series = cp2.getSeries(); // TODO: Remove kludge by
-													// moving data access out of
-													// cp2
+		TimeSeries[][] series = PM_Data.getInstance().getSeries();
+
 		// dimensions are bparts x cparts
 		// For demo purposes, we will pick a year and show energy;
 		// We assume first month is september ...
