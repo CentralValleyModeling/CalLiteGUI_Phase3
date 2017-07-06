@@ -16,15 +16,18 @@ import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 
 import gov.ca.water.calgui.bus_service.impl.DSSGrabber1SvcImpl;
+import gov.ca.water.calgui.constant.Constant;
 import hec.heclib.util.HecTime;
 import hec.io.TimeSeriesContainer;
 
 public class ChartPanel2 extends JPanel {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4268988706560498661L;
+
 	private JFreeChart[] charts = new JFreeChart[12];
-	private String[] bParts = { "CARRPP", "CVPSANLUISPP", "FOLSOMPP", "KESWICKPP", "NIMBUSPP", "ONEILPP", "SHASTAPP",
-			"SPRINGCREEKPP", "TRINITYPP" };
-	private String[] cParts = { "ENERGY", "FORGONE", "RELEASE", "SPILL" };
 
 	private TimeSeries[][] series;
 	private TimeSeries[][][] ex_series;
@@ -37,23 +40,23 @@ public class ChartPanel2 extends JPanel {
 	 */
 	private void readManyTimeSeries() {
 		DSSGrabber1SvcImpl dg = (DSSGrabber1SvcImpl) DG_Handle.getInstance().getDG();
-		series = new TimeSeries[bParts.length][cParts.length];
-		ex_series = new TimeSeries[bParts.length][cParts.length][14];
+		series = new TimeSeries[Constant.BPARTS.length][Constant.CPARTS.length];
+		ex_series = new TimeSeries[Constant.BPARTS.length][Constant.CPARTS.length][14];
 		HecTime ht = new HecTime();
-		for (int i = 0; i < bParts.length; i++) {
-			for (int j = 0; j < cParts.length; j++) {
+		for (int i = 0; i < Constant.BPARTS.length; i++) {
+			for (int j = 0; j < Constant.CPARTS.length; j++) {
 
 				dg.setBase(DG_Handle.getInstance().getBaseName());
-				String seriesName = "/HYDROPOWER/" + bParts[i] + "/" + cParts[j]
+				String seriesName = "/HYDROPOWER/" + Constant.BPARTS[i] + "/" + Constant.CPARTS[j]
 						+ "/01JAN1930/1MON/POWERPLANT-GENERATION/";
 				dg.setLocation("*" + seriesName);
 				dg.setDateRange("FEB1924-feb2003");
-				dg.setPrimaryDSSName(bParts[i] + "/" + cParts[j] + "/POWERPLANT-GENERATION");
+				dg.setPrimaryDSSName(Constant.BPARTS[i] + "/" + Constant.CPARTS[j] + "/POWERPLANT-GENERATION");
 
 				dg.checkReadiness();
 
 				TimeSeriesContainer[] tscs = dg.getPrimarySeries(seriesName);
-				series[i][j] = new TimeSeries(bParts[i] + "/" + cParts[j]);
+				series[i][j] = new TimeSeries(Constant.BPARTS[i] + "/" + Constant.CPARTS[j]);
 
 				for (int k = 0; k < tscs[0].numberValues; k++) {
 					ht.set(tscs[0].times[k]);
@@ -62,7 +65,8 @@ public class ChartPanel2 extends JPanel {
 
 				TimeSeriesContainer[][] ex_tscs = dg.getExceedanceSeries(tscs);
 				for (int l = 0; l < 14; l++) {
-					ex_series[i][j][l] = new TimeSeries(bParts[i] + "/" + cParts[j] + " " + Integer.toString(l));
+					ex_series[i][j][l] = new TimeSeries(
+							Constant.BPARTS[i] + "/" + Constant.CPARTS[j] + " " + Integer.toString(l));
 					for (int k = 0; k < ex_tscs[l][0].numberValues; k++) {
 						ht.set(tscs[0].times[k]);
 						ex_series[i][j][l].addOrUpdate(new Month(ht.month(), ht.year()), ex_tscs[l][0].values[k]);
@@ -83,16 +87,16 @@ public class ChartPanel2 extends JPanel {
 	}
 
 	private int getCPart(String cpart) {
-		for (int i = 0; i < cParts.length; i++) {
-			if (cpart.equals(cParts[i]))
+		for (int i = 0; i < Constant.CPARTS.length; i++) {
+			if (cpart.equals(Constant.CPARTS[i]))
 				return i;
 		}
 		return -1;
 	}
 
 	private int getBPart(String bpart) {
-		for (int i = 0; i < bParts.length; i++) {
-			if (bpart.equals(bParts[i]))
+		for (int i = 0; i < Constant.BPARTS.length; i++) {
+			if (bpart.equals(Constant.BPARTS[i]))
 				return i;
 		}
 		return -1;
@@ -159,7 +163,7 @@ public class ChartPanel2 extends JPanel {
 		int m = getMonth(month);
 		int c = getCPart(cPart);
 		double max = 0.0;
-		for (int i = 0; i < bParts.length; i++) {
+		for (int i = 0; i < Constant.BPARTS.length; i++) {
 
 			// Set series
 
@@ -182,10 +186,10 @@ public class ChartPanel2 extends JPanel {
 
 			sc.addSeries(dataSeries[i]);
 			panels[i].getChart().getXYPlot().getRangeAxis().setLabel(cPart);
-			panels[i].getChart().setTitle(bParts[i]);
+			panels[i].getChart().setTitle(Constant.BPARTS[i]);
 			this.add(panels[i]);
 		}
-		for (int i = 0; i < bParts.length; i++) {
+		for (int i = 0; i < Constant.BPARTS.length; i++) {
 			NumberAxis axis = (NumberAxis) panels[i].getChart().getXYPlot().getRangeAxis();
 			axis.setRange(0, max);
 		}

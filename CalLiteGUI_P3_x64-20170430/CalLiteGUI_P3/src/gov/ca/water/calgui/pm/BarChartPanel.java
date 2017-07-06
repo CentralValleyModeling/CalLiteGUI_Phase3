@@ -12,11 +12,14 @@ import org.jfree.chart.renderer.category.BarRenderer;
 import org.jfree.data.category.DefaultCategoryDataset;
 import org.jfree.data.time.TimeSeries;
 
+import gov.ca.water.calgui.constant.Constant;
+
 public class BarChartPanel extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1820330233114070810L;
 	private JFreeChart chart;
-	private String[] bParts = { "CARRPP", "CVPSANLUISPP", "FOLSOMPP", "KESWICKPP", "NIMBUSPP", "ONEILPP", "SHASTAPP",
-			"SPRINGCREEKPP", "TRINITYPP" };
-	private String[] cParts = { "ENERGY", "FORGONE", "RELEASE", "SPILL" };
 
 	public BarChartPanel(ChartPanel2 cp2) {
 
@@ -33,12 +36,13 @@ public class BarChartPanel extends JPanel {
 		int offset = (year - 1922) * 12;
 		int cPartI = 0;
 
-		for (int bPartI = 0; bPartI < bParts.length; bPartI++)
+		for (int bPartI = 0; bPartI < Constant.BPARTS.length; bPartI++)
 			for (int m = 0; m < 12; m++)
-				dataset.addValue(series[bPartI][cPartI].getValue(m + offset), bParts[bPartI],
+				dataset.addValue(series[bPartI][cPartI].getValue(m + offset), Constant.BPARTS[bPartI],
 						"OctNovDecJanFebMarAprMayJunJulAugSep".substring(m * 3, m * 3 + 3));
 
-		chart = ChartFactory.createStackedBarChart(year + " " + cParts[cPartI], "Month", cParts[cPartI], dataset, true);
+		chart = ChartFactory.createStackedBarChart(year + " " + Constant.CPARTS[cPartI], "Month",
+				Constant.CPARTS[cPartI], dataset, true);
 
 		BarRenderer renderer = (BarRenderer) chart.getCategoryPlot().getRenderer();
 		renderer.setItemMargin(-2);

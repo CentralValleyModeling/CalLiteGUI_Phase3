@@ -17,6 +17,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import gov.ca.water.calgui.bo.ResultUtilsBO;
+import gov.ca.water.calgui.constant.Constant;
 
 public class PM_Panel extends JPanel implements ActionListener, ChangeListener {
 
@@ -64,10 +65,7 @@ public class PM_Panel extends JPanel implements ActionListener, ChangeListener {
 		rb2.addActionListener(this);
 		h.add(rb2);
 
-		String[] bParts = { "CARRPP", "CVPSANLUISPP", "FOLSOMPP", "KESWICKPP", "NIMBUSPP", "ONEILPP", "SHASTAPP",
-				"SPRINGCREEKPP", "TRINITYPP" };
-
-		sList = new JComboBox<String>(bParts);
+		sList = new JComboBox<String>(Constant.BPARTS);
 		sList.setSelectedIndex(0);
 		sList.setEnabled(true);
 		sList.addActionListener(this);
@@ -78,9 +76,7 @@ public class PM_Panel extends JPanel implements ActionListener, ChangeListener {
 
 		h.add(new JLabel("  C-PART: "));
 
-		String[] cParts = { "ENERGY", "FORGONE", "RELEASE", "SPILL" };
-
-		cList = new JComboBox<String>(cParts);
+		cList = new JComboBox<String>(Constant.CPARTS);
 		cList.setSelectedIndex(0);
 		cList.setEnabled(true);
 		cList.addActionListener(this);

@@ -98,4 +98,10 @@ public class Constant {
 	public static final String VAMP_SELECTED_TEXT = "If D1485 is selected, take VAMP D1641 hydrology with a D1485 run.";
 	public static final String VAMP_NOT_SELECTED_TEXT = "Access regulation table (where applicable) by selecting or right-clicking on a regulation name.";
 
+	// Power Module strings
+
+	public static final String[] BPARTS = { "CARRPP", "CVPSANLUISPP", "FOLSOMPP", "KESWICKPP", "NIMBUSPP", "ONEILPP",
+			"SHASTAPP", "SPRINGCREEKPP", "TRINITYPP" };
+	public static final String[] CPARTS = { "ENERGY", "FORGONE", "RELEASE", "SPILL" };
+
 }
